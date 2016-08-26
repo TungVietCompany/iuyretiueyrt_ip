@@ -9,8 +9,18 @@
 import UIKit
 
 class ProfileCollectionViewCell: UICollectionViewCell {
+
+    @IBOutlet weak var imagebook: UIImageView!
     
-    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var lblau: UILabel!
     
-    @IBOutlet weak var lbl: UILabel!
+    @IBOutlet weak var lblde: UILabel!
+    
+    @IBOutlet weak var lblpr: UILabel!
+    
+    
+    
+    
+    
+    
 }

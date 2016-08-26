@@ -10,19 +10,20 @@ import UIKit
 
 class ProfileViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate {
 
-    @IBOutlet weak var collection: UICollectionView!
-    
     var arrDemo : [String]!
     var arrImage :[String]!
     override func viewDidLoad() {
         super.viewDidLoad()
-        arrDemo = ["demo","demo"]
-        arrImage = ["book","book1"]
-        collection.dataSource = self
-        collection.delegate = self
+        arrDemo = ["demo","demo","demo","demo","demo","demo","demo","demo","demo","demo"]
+        arrImage = ["book","book1","book","book1","book","book1","book","book1","book","book1"]
+        collec.dataSource = self
+        
+        collec.delegate = self
+        collec.backgroundColor = UIColor.whiteColor()
         // Do any additional setup after loading the view.
     }
 
+    @IBOutlet weak var collec: UICollectionView!
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -33,13 +34,12 @@ class ProfileViewController: UIViewController,UICollectionViewDataSource,UIColle
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collection.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! ListingsCustomCollectionViewCell
-//        cell.author.text = arrDemo[indexPath.row]
-//        cell.detail.text = arrDemo[indexPath.row]
-//        cell.price.text = arrDemo[indexPath.row]
-//        cell.imageBook.image = UIImage(named: arrImage[indexPath.row])
-        cell.image.image = UIImage(named: arrImage[indexPath.row])
-        cell.lable.text = arrDemo[indexPath.row]
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! ProfileCollectionViewCell
+            cell.lblau.text = arrDemo[indexPath.row]
+            cell.lblde.text = arrDemo[indexPath.row]
+            cell.lblpr.text = arrDemo[indexPath.row]
+            cell.imagebook.image = UIImage(named: arrImage[indexPath.row])
+        
         return cell
     }
     
