@@ -55,10 +55,76 @@ class MenuViewController: UIViewController, UITableViewDataSource,UITableViewDel
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let sb = UIStoryboard(name: "Main", bundle: nil)
-                    let vc = sb.instantiateViewControllerWithIdentifier("MyTabBarViewController") as! MyTabBarViewController
-                    self.presentViewController(vc, animated: true,completion: nil)
+        switch indexPath.row {
+        case 0:
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let vc = sb.instantiateViewControllerWithIdentifier("MyTabBarViewController") as! MyTabBarViewController
+            self.presentViewController(vc, animated: true,completion: nil)
 
+            break
+        case 1:
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let vc = sb.instantiateViewControllerWithIdentifier("NotificationsViewController") as! NotificationsViewController
+            self.presentViewController(vc, animated: true,completion: nil)
+            break
+        case 2:
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let vc = sb.instantiateViewControllerWithIdentifier("FaqViewController") as! FaqViewController
+            self.presentViewController(vc, animated: true,completion: nil)
+            break
+        case 3:
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let vc = sb.instantiateViewControllerWithIdentifier("InviteFriendViewController") as! InviteFriendViewController
+            self.presentViewController(vc, animated: true,completion: nil)
+            break
+
+        case 4:
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let vc = sb.instantiateViewControllerWithIdentifier("RateBoxxtownViewController") as! RateBoxxtownViewController
+            self.presentViewController(vc, animated: true,completion: nil)
+            break
+
+        case 5:
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let vc = sb.instantiateViewControllerWithIdentifier("AboutBooxtownViewController") as! AboutBooxtownViewController
+            self.presentViewController(vc, animated: true,completion: nil)
+            break
+
+        case 6:
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let vc = sb.instantiateViewControllerWithIdentifier("ContactBooxtownViewController") as! ContactBooxtownViewController
+            self.presentViewController(vc, animated: true,completion: nil)
+            break
+
+        case 7:
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let vc = sb.instantiateViewControllerWithIdentifier("SettingViewController") as! SettingViewController
+            self.presentViewController(vc, animated: true,completion: nil)
+            break
+
+        case 8:
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let vc = sb.instantiateViewControllerWithIdentifier("MyTabBarViewController") as! MyTabBarViewController
+            self.presentViewController(vc, animated: true,completion: nil)
+            break
+
+        case 9:
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let vc = sb.instantiateViewControllerWithIdentifier("MyTabBarViewController") as! MyTabBarViewController
+            self.presentViewController(vc, animated: true,completion: nil)
+            break
+
+
+        default:
+            break
+        }
+
+    }
+    
+    func moveScreen(screenId : String,screenName : UIViewController){
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("MyTabBarViewController") as! MyTabBarViewController
+        self.presentViewController(vc, animated: true,completion: nil)
     }
     /*
     // MARK: - Navigation

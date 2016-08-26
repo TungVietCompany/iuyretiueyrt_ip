@@ -13,6 +13,11 @@
 		5846C3A91D70BB4900461DFA /* FaqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5846C3A81D70BB4900461DFA /* FaqViewController.swift */; };
 		5846C3AC1D70BFDF00461DFA /* rateboox.png in Resources */ = {isa = PBXBuildFile; fileRef = 5846C3AA1D70BFDF00461DFA /* rateboox.png */; };
 		5846C3AD1D70BFDF00461DFA /* invitefriend.png in Resources */ = {isa = PBXBuildFile; fileRef = 5846C3AB1D70BFDF00461DFA /* invitefriend.png */; };
+		5846C3AF1D70C9A200461DFA /* InviteFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5846C3AE1D70C9A200461DFA /* InviteFriendViewController.swift */; };
+		5846C3B21D70C9CD00461DFA /* RateBoxxtownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5846C3B11D70C9CD00461DFA /* RateBoxxtownViewController.swift */; };
+		5846C3B41D70CA2100461DFA /* AboutBooxtownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5846C3B31D70CA2100461DFA /* AboutBooxtownViewController.swift */; };
+		5846C3B61D70CA4900461DFA /* ContactBooxtownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5846C3B51D70CA4900461DFA /* ContactBooxtownViewController.swift */; };
+		5846C3B81D70CA8F00461DFA /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5846C3B71D70CA8F00461DFA /* SettingViewController.swift */; };
 		C50301061D6FDA5400055B01 /* ListingsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50301051D6FDA5400055B01 /* ListingsCollectionViewCell.swift */; };
 		C50301081D6FE21600055B01 /* book1.png in Resources */ = {isa = PBXBuildFile; fileRef = C50301071D6FE21600055B01 /* book1.png */; };
 		C503010A1D6FE81500055B01 /* line_hight.png in Resources */ = {isa = PBXBuildFile; fileRef = C50301091D6FE81500055B01 /* line_hight.png */; };
@@ -128,6 +133,11 @@
 		5846C3A81D70BB4900461DFA /* FaqViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaqViewController.swift; sourceTree = "<group>"; };
 		5846C3AA1D70BFDF00461DFA /* rateboox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rateboox.png; path = "../../../../Downloads/file xuat all/rateboox.png"; sourceTree = "<group>"; };
 		5846C3AB1D70BFDF00461DFA /* invitefriend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = invitefriend.png; path = "../../../../Downloads/file xuat all/invitefriend.png"; sourceTree = "<group>"; };
+		5846C3AE1D70C9A200461DFA /* InviteFriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteFriendViewController.swift; sourceTree = "<group>"; };
+		5846C3B11D70C9CD00461DFA /* RateBoxxtownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateBoxxtownViewController.swift; sourceTree = "<group>"; };
+		5846C3B31D70CA2100461DFA /* AboutBooxtownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutBooxtownViewController.swift; sourceTree = "<group>"; };
+		5846C3B51D70CA4900461DFA /* ContactBooxtownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactBooxtownViewController.swift; sourceTree = "<group>"; };
+		5846C3B71D70CA8F00461DFA /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		C50301051D6FDA5400055B01 /* ListingsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingsCollectionViewCell.swift; sourceTree = "<group>"; };
 		C50301071D6FE21600055B01 /* book1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book1.png; sourceTree = "<group>"; };
 		C50301091D6FE81500055B01 /* line_hight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line_hight.png; sourceTree = "<group>"; };
@@ -251,6 +261,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5846C3B01D70C9BA00461DFA /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
 		C50A61A71D6B2A800027159F /* image */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,6 +362,7 @@
 		C5A0B5391D6B25B30091615B /* BooxTownApplication */ = {
 			isa = PBXGroup;
 			children = (
+				5846C3B01D70C9BA00461DFA /* New Group */,
 				C581D8B21D6F1A010014E716 /* images */,
 				C5A420AE1D6D373600FFBBF7 /* image40 */,
 				C58CEFC61D6C9CB0000F0903 /* Adapter */,
@@ -369,6 +387,11 @@
 				C5D4E1481D705F5C00D3FD8D /* ProfileViewController.swift */,
 				5846C3A41D70B2F600461DFA /* NotificationsViewController.swift */,
 				5846C3A81D70BB4900461DFA /* FaqViewController.swift */,
+				5846C3AE1D70C9A200461DFA /* InviteFriendViewController.swift */,
+				5846C3B11D70C9CD00461DFA /* RateBoxxtownViewController.swift */,
+				5846C3B31D70CA2100461DFA /* AboutBooxtownViewController.swift */,
+				5846C3B51D70CA4900461DFA /* ContactBooxtownViewController.swift */,
+				5846C3B71D70CA8F00461DFA /* SettingViewController.swift */,
 			);
 			path = BooxTownApplication;
 			sourceTree = "<group>";
@@ -623,10 +646,12 @@
 				C50301061D6FDA5400055B01 /* ListingsCollectionViewCell.swift in Sources */,
 				C5CD09561D6F4FEB00BCD038 /* ListingsViewController.swift in Sources */,
 				C5A0B56C1D6B266A0091615B /* PageContentViewController.swift in Sources */,
+				5846C3B81D70CA8F00461DFA /* SettingViewController.swift in Sources */,
 				C50B217D1D6DBD69002A2166 /* ListMenuTableViewCell.swift in Sources */,
 				C50B217F1D6DBEF8002A2166 /* ListMenuTableViewController.swift in Sources */,
 				C581D8B11D6F117E0014E716 /* InteractViewController.swift in Sources */,
 				C50301101D6FEE4F00055B01 /* WhishboardViewController.swift in Sources */,
+				5846C3B61D70CA4900461DFA /* ContactBooxtownViewController.swift in Sources */,
 				C5A0B53B1D6B25B40091615B /* AppDelegate.swift in Sources */,
 				C503010C1D6FED2000055B01 /* WhishboardTableViewCell.swift in Sources */,
 				C5A0B56D1D6B266A0091615B /* PageViewController.swift in Sources */,
@@ -636,12 +661,15 @@
 				5846C3A51D70B2F600461DFA /* NotificationsViewController.swift in Sources */,
 				C581D8A91D6EDC870014E716 /* ExploreViewController.swift in Sources */,
 				5846C3A31D70B1F600461DFA /* NotificationTableViewCell.swift in Sources */,
+				5846C3B41D70CA2100461DFA /* AboutBooxtownViewController.swift in Sources */,
 				5846C3A91D70BB4900461DFA /* FaqViewController.swift in Sources */,
 				C5D4E14B1D70777A00D3FD8D /* ListingsCustomCollectionViewCell.swift in Sources */,
+				5846C3B21D70C9CD00461DFA /* RateBoxxtownViewController.swift in Sources */,
 				C581D8AF1D6F11350014E716 /* CustomcellInteractTableViewCell.swift in Sources */,
 				C58CEFC81D6C9D07000F0903 /* MyTabBarViewController.swift in Sources */,
 				C5D4E1491D705F5C00D3FD8D /* ProfileViewController.swift in Sources */,
 				C58CEFA31D6C36A8000F0903 /* SignInViewController.swift in Sources */,
+				5846C3AF1D70C9A200461DFA /* InviteFriendViewController.swift in Sources */,
 				C5A0B56E1D6B266A0091615B /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
