@@ -8,10 +8,12 @@
 
 import UIKit
 
-class WhishboardViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class WhishboardViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UITabBarDelegate {
 
     @IBOutlet weak var tableWish: UITableView!
     
+    
+    @IBOutlet weak var tabwish: UITabBar!
     var arrWish : [String]!
     
     var arrDate : [String]!
@@ -27,7 +29,7 @@ class WhishboardViewController: UIViewController,UITableViewDelegate,UITableView
         
         tableWish.dataSource = self
         tableWish.delegate = self
-        
+        tabwish.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -52,6 +54,44 @@ class WhishboardViewController: UIViewController,UITableViewDelegate,UITableView
         cell.cellDate.text = arrDate[indexPath.row]
         
         return cell
+    }
+    
+    func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem) {
+        switch item.tag{
+        case 0:
+            let stor = UIStoryboard(name: "Main", bundle: nil)
+            let alert = stor.instantiateViewControllerWithIdentifier("BookLocaTorViewController") as! BookLocaTorViewController
+            self.presentViewController(alert, animated: false,completion: nil)
+            
+            break
+        case 1:
+            let stor = UIStoryboard(name: "Main", bundle: nil)
+            let alert = stor.instantiateViewControllerWithIdentifier("InteractViewController") as! InteractViewController
+            self.presentViewController(alert, animated: false,completion: nil)
+            
+            break
+        case 2:
+            
+            let stor = UIStoryboard(name: "Main", bundle: nil)
+            let alert = stor.instantiateViewControllerWithIdentifier("ListingsViewController") as! ListingsViewController
+            self.presentViewController(alert, animated: false,completion: nil)
+            break
+        case 3:
+            let stor = UIStoryboard(name: "Main", bundle: nil)
+            let alert = stor.instantiateViewControllerWithIdentifier("WhishboardViewController") as! WhishboardViewController
+            self.presentViewController(alert, animated: false,completion: nil)
+            break
+        case 4:
+            
+            let stor = UIStoryboard(name: "Main", bundle: nil)
+            let alert = stor.instantiateViewControllerWithIdentifier("ProfileViewController") as! ProfileViewController
+            self.presentViewController(alert, animated: false,completion: nil)
+            
+            break
+        default:
+            break
+        }
+
     }
     
     

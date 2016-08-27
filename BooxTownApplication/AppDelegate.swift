@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        var pageControl = UIPageControl.appearance()
+        let pageControl = UIPageControl.appearance()
         
         pageControl.pageIndicatorTintColor = UIColor.blackColor()
         
@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         pageControl.backgroundColor = UIColor.clearColor()
         
         pageControl.layer.position.y = 200
-        
+//
         
         
         

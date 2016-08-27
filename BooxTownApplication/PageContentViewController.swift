@@ -25,17 +25,17 @@ class PageContentViewController: UIViewController {
         super.viewDidLoad()
 
         
-        btnSignIn.layer.cornerRadius = 15
-        btnSignUp.layer.cornerRadius = 15
+//        btnSignIn.layer.cornerRadius = 15
+//        btnSignUp.layer.cornerRadius = 15
         // Do any additional setup after loading the view.
        
         let screenSize: CGRect = UIScreen.mainScreen().bounds
-        
-        let bg = UIImage(named: strPhotoName)
-        let bgView = UIImageView(image: bg)
+//        
+//        let bg = UIImage(named: strPhotoName)
+//        let bgView = UIImageView(image: bg)
 //        bgView.contentMode = UIViewContentMode.Center
-        bgView.frame = CGRectMake(0, 0, screenSize.width, screenSize.height)
-        self.view.insertSubview(bgView,atIndex:0)
+//        bgView.frame = CGRectMake(0, 0, screenSize.width, screenSize.height)
+//        self.view.insertSubview(bgView,atIndex:0)
         
 //        self.view.insertSubview(myViewBottom, atIndex: 2)
     

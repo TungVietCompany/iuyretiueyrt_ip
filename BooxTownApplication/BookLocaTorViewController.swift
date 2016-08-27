@@ -10,13 +10,14 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class BookLocaTorViewController: UIViewController {
+class BookLocaTorViewController: UIViewController,UITabBarDelegate {
 
+    @IBOutlet weak var mytabar: UITabBar!
     @IBOutlet weak var myView: UIView!
     @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        mytabar.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -24,6 +25,44 @@ class BookLocaTorViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem) {
+        switch item.tag{
+        case 0:
+            let stor = UIStoryboard(name: "Main", bundle: nil)
+            let alert = stor.instantiateViewControllerWithIdentifier("BookLocaTorViewController") as! BookLocaTorViewController
+            self.presentViewController(alert, animated: false,completion: nil)
+            
+            break
+        case 1:
+            let stor = UIStoryboard(name: "Main", bundle: nil)
+            let alert = stor.instantiateViewControllerWithIdentifier("InteractViewController") as! InteractViewController
+            self.presentViewController(alert, animated: false,completion: nil)
+            
+            break
+        case 2:
+            
+            let stor = UIStoryboard(name: "Main", bundle: nil)
+            let alert = stor.instantiateViewControllerWithIdentifier("ListingsViewController") as! ListingsViewController
+            self.presentViewController(alert, animated: false,completion: nil)
+            break
+        case 3:
+            let stor = UIStoryboard(name: "Main", bundle: nil)
+            let alert = stor.instantiateViewControllerWithIdentifier("WhishboardViewController") as! WhishboardViewController
+            self.presentViewController(alert, animated: false,completion: nil)
+            break
+        case 4:
+            
+            let stor = UIStoryboard(name: "Main", bundle: nil)
+            let alert = stor.instantiateViewControllerWithIdentifier("ProfileViewController") as! ProfileViewController
+            self.presentViewController(alert, animated: false,completion: nil)
+            
+            break
+        default:
+            break
+        }
+
     }
     
 

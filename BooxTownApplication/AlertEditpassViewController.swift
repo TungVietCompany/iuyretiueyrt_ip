@@ -1,5 +1,5 @@
 //
-//  RateBoxxtownViewController.swift
+//  AlertEditpassViewController.swift
 //  BooxTownApplication
 //
 //  Created by MtViet on 8/26/16.
@@ -8,10 +8,20 @@
 
 import UIKit
 
-class RateBoxxtownViewController: UIViewController {
+class AlertEditpassViewController: UIViewController {
 
+    @IBOutlet weak var btnEdit: UIButton!
+    @IBOutlet weak var myView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var efec = UIBlurEffect(style: .Light)
+        var Bluview = UIVisualEffectView(effect: efec)
+        Bluview.frame = self.view.bounds
+        
+        view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.9)
+        myView.layer.cornerRadius = 10
+        btnEdit.layer.cornerRadius = 5
 
         // Do any additional setup after loading the view.
     }
@@ -21,18 +31,7 @@ class RateBoxxtownViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBOutlet weak var dome: UIButton!
 
-    @IBAction func ale(sender: AnyObject) {
-        
-        let stor = UIStoryboard(name: "Main", bundle: nil)
-        
-        let alert = stor.instantiateViewControllerWithIdentifier("AlertEditpassViewController") as! AlertEditpassViewController
-        alert.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
-        alert.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
-        self.presentViewController(alert, animated: true,completion: nil)
-        
-    }
     /*
     // MARK: - Navigation
 

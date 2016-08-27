@@ -18,6 +18,10 @@
 		5846C3B41D70CA2100461DFA /* AboutBooxtownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5846C3B31D70CA2100461DFA /* AboutBooxtownViewController.swift */; };
 		5846C3B61D70CA4900461DFA /* ContactBooxtownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5846C3B51D70CA4900461DFA /* ContactBooxtownViewController.swift */; };
 		5846C3B81D70CA8F00461DFA /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5846C3B71D70CA8F00461DFA /* SettingViewController.swift */; };
+		58C3AB0B1D7137A800C0305B /* AlertEditpassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C3AB0A1D7137A800C0305B /* AlertEditpassViewController.swift */; };
+		58C3AB0D1D7141AA00C0305B /* icon_close_custom.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 58C3AB0C1D7141AA00C0305B /* icon_close_custom.PNG */; };
+		58C3AB0F1D7142CB00C0305B /* close_popup.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 58C3AB0E1D7142CB00C0305B /* close_popup.PNG */; };
+		58C3AB121D71714800C0305B /* TabarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C3AB111D71714800C0305B /* TabarViewController.swift */; };
 		C50301061D6FDA5400055B01 /* ListingsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50301051D6FDA5400055B01 /* ListingsCollectionViewCell.swift */; };
 		C50301081D6FE21600055B01 /* book1.png in Resources */ = {isa = PBXBuildFile; fileRef = C50301071D6FE21600055B01 /* book1.png */; };
 		C503010A1D6FE81500055B01 /* line_hight.png in Resources */ = {isa = PBXBuildFile; fileRef = C50301091D6FE81500055B01 /* line_hight.png */; };
@@ -138,6 +142,10 @@
 		5846C3B31D70CA2100461DFA /* AboutBooxtownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutBooxtownViewController.swift; sourceTree = "<group>"; };
 		5846C3B51D70CA4900461DFA /* ContactBooxtownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactBooxtownViewController.swift; sourceTree = "<group>"; };
 		5846C3B71D70CA8F00461DFA /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		58C3AB0A1D7137A800C0305B /* AlertEditpassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertEditpassViewController.swift; sourceTree = "<group>"; };
+		58C3AB0C1D7141AA00C0305B /* icon_close_custom.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_close_custom.PNG; path = ../../../icon_close_custom.PNG; sourceTree = "<group>"; };
+		58C3AB0E1D7142CB00C0305B /* close_popup.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = close_popup.PNG; path = ../../../../../../Volumes/DAN/close_popup.PNG; sourceTree = "<group>"; };
+		58C3AB111D71714800C0305B /* TabarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabarViewController.swift; sourceTree = "<group>"; };
 		C50301051D6FDA5400055B01 /* ListingsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingsCollectionViewCell.swift; sourceTree = "<group>"; };
 		C50301071D6FE21600055B01 /* book1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book1.png; sourceTree = "<group>"; };
 		C50301091D6FE81500055B01 /* line_hight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line_hight.png; sourceTree = "<group>"; };
@@ -261,16 +269,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5846C3B01D70C9BA00461DFA /* New Group */ = {
+		5846C3B01D70C9BA00461DFA /* alert */ = {
 			isa = PBXGroup;
 			children = (
+				58C3AB0A1D7137A800C0305B /* AlertEditpassViewController.swift */,
 			);
-			name = "New Group";
+			name = alert;
+			sourceTree = "<group>";
+		};
+		58C3AB101D716AAE00C0305B /* tabar */ = {
+			isa = PBXGroup;
+			children = (
+				58C3AB111D71714800C0305B /* TabarViewController.swift */,
+			);
+			name = tabar;
 			sourceTree = "<group>";
 		};
 		C50A61A71D6B2A800027159F /* image */ = {
 			isa = PBXGroup;
 			children = (
+				58C3AB0E1D7142CB00C0305B /* close_popup.PNG */,
+				58C3AB0C1D7141AA00C0305B /* icon_close_custom.PNG */,
 				C50B21701D6DA5FA002A2166 /* line.png */,
 				C58CEFD91D6CD5BE000F0903 /* ic_bag_active.png */,
 				C58CEFDA1D6CD5BE000F0903 /* ic_bag_inactive.png */,
@@ -362,7 +381,8 @@
 		C5A0B5391D6B25B30091615B /* BooxTownApplication */ = {
 			isa = PBXGroup;
 			children = (
-				5846C3B01D70C9BA00461DFA /* New Group */,
+				58C3AB101D716AAE00C0305B /* tabar */,
+				5846C3B01D70C9BA00461DFA /* alert */,
 				C581D8B21D6F1A010014E716 /* images */,
 				C5A420AE1D6D373600FFBBF7 /* image40 */,
 				C58CEFC61D6C9CB0000F0903 /* Adapter */,
@@ -557,6 +577,7 @@
 				C581D8B41D6F1A9F0014E716 /* next.png in Resources */,
 				C5A420BA1D6D374C00FFBBF7 /* ic_bag_inactive_40.png in Resources */,
 				C5A420C11D6D374C00FFBBF7 /* ic_people_active_40.png in Resources */,
+				58C3AB0F1D7142CB00C0305B /* close_popup.PNG in Resources */,
 				C58CEFE71D6CD5BE000F0903 /* ic_location_active.png in Resources */,
 				C5A420C21D6D374C00FFBBF7 /* ic_people_inactive_40.png in Resources */,
 				C50B21AB1D6DDD0C002A2166 /* logout.PNG in Resources */,
@@ -602,6 +623,7 @@
 				C50B21791D6DAF6C002A2166 /* ic_fitersort.png in Resources */,
 				C5F63B571D7023BF0080D3FA /* starfull.png in Resources */,
 				C58CEFE41D6CD5BE000F0903 /* ic_bag_inactive.png in Resources */,
+				58C3AB0D1D7141AA00C0305B /* icon_close_custom.PNG in Resources */,
 				C50A61AA1D6B2B8D0027159F /* bg2.png in Resources */,
 				C58CEFE61D6CD5BE000F0903 /* ic_camera_inactive.png in Resources */,
 				C5CEE9991D6B5652008504EA /* g+.png in Resources */,
@@ -642,6 +664,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C58CEFC51D6C8CFD000F0903 /* BookLocaTorViewController.swift in Sources */,
+				58C3AB0B1D7137A800C0305B /* AlertEditpassViewController.swift in Sources */,
 				C50B21B11D6DE3F6002A2166 /* MenuViewController.swift in Sources */,
 				C50301061D6FDA5400055B01 /* ListingsCollectionViewCell.swift in Sources */,
 				C5CD09561D6F4FEB00BCD038 /* ListingsViewController.swift in Sources */,
@@ -669,6 +692,7 @@
 				C58CEFC81D6C9D07000F0903 /* MyTabBarViewController.swift in Sources */,
 				C5D4E1491D705F5C00D3FD8D /* ProfileViewController.swift in Sources */,
 				C58CEFA31D6C36A8000F0903 /* SignInViewController.swift in Sources */,
+				58C3AB121D71714800C0305B /* TabarViewController.swift in Sources */,
 				5846C3AF1D70C9A200461DFA /* InviteFriendViewController.swift in Sources */,
 				C5A0B56E1D6B266A0091615B /* SplashViewController.swift in Sources */,
 			);

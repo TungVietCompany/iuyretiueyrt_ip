@@ -8,9 +8,10 @@
 
 import UIKit
 
-class InteractViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
-
+class InteractViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,UITabBarDelegate {
     
+    
+    @IBOutlet weak var tab: UITabBar!
     @IBOutlet weak var myCell: UITableView!
     var arrTemTopic : [String]!
     var arrTemTitle : [String]!
@@ -22,6 +23,8 @@ class InteractViewController: UIViewController,UITableViewDataSource,UITableView
         arrTemTitle = ["demo","demo","demo","demo","demo"]
         // Do any additional setup after loading the view.
         myCell.dataSource = self
+        myCell.delegate = self
+        tab.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,6 +42,44 @@ class InteractViewController: UIViewController,UITableViewDataSource,UITableView
         cell.title.text = arrTemTitle[indexPath.row]
         cell.appear.text = arrayTemApear[indexPath.row]
         return cell
+    }
+    
+    func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem) {
+        switch item.tag{
+        case 0:
+            let stor = UIStoryboard(name: "Main", bundle: nil)
+            let alert = stor.instantiateViewControllerWithIdentifier("BookLocaTorViewController") as! BookLocaTorViewController
+            self.presentViewController(alert, animated: false,completion: nil)
+            
+            break
+        case 1:
+            let stor = UIStoryboard(name: "Main", bundle: nil)
+            let alert = stor.instantiateViewControllerWithIdentifier("InteractViewController") as! InteractViewController
+            self.presentViewController(alert, animated: false,completion: nil)
+            
+            break
+        case 2:
+            
+            let stor = UIStoryboard(name: "Main", bundle: nil)
+            let alert = stor.instantiateViewControllerWithIdentifier("ListingsViewController") as! ListingsViewController
+            self.presentViewController(alert, animated: false,completion: nil)
+            break
+        case 3:
+            let stor = UIStoryboard(name: "Main", bundle: nil)
+            let alert = stor.instantiateViewControllerWithIdentifier("WhishboardViewController") as! WhishboardViewController
+            self.presentViewController(alert, animated: false,completion: nil)
+            break
+        case 4:
+            
+            let stor = UIStoryboard(name: "Main", bundle: nil)
+            let alert = stor.instantiateViewControllerWithIdentifier("ProfileViewController") as! ProfileViewController
+            self.presentViewController(alert, animated: false,completion: nil)
+            
+            break
+        default:
+            break
+        }
+
     }
     
     
