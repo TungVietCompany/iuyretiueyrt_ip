@@ -11,16 +11,12 @@
 		5846C3A51D70B2F600461DFA /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5846C3A41D70B2F600461DFA /* NotificationsViewController.swift */; };
 		5846C3A71D70BAB300461DFA /* FaqTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5846C3A61D70BAB300461DFA /* FaqTableViewCell.swift */; };
 		5846C3A91D70BB4900461DFA /* FaqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5846C3A81D70BB4900461DFA /* FaqViewController.swift */; };
-		5846C3AC1D70BFDF00461DFA /* rateboox.png in Resources */ = {isa = PBXBuildFile; fileRef = 5846C3AA1D70BFDF00461DFA /* rateboox.png */; };
-		5846C3AD1D70BFDF00461DFA /* invitefriend.png in Resources */ = {isa = PBXBuildFile; fileRef = 5846C3AB1D70BFDF00461DFA /* invitefriend.png */; };
 		5846C3AF1D70C9A200461DFA /* InviteFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5846C3AE1D70C9A200461DFA /* InviteFriendViewController.swift */; };
 		5846C3B21D70C9CD00461DFA /* RateBoxxtownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5846C3B11D70C9CD00461DFA /* RateBoxxtownViewController.swift */; };
 		5846C3B41D70CA2100461DFA /* AboutBooxtownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5846C3B31D70CA2100461DFA /* AboutBooxtownViewController.swift */; };
 		5846C3B61D70CA4900461DFA /* ContactBooxtownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5846C3B51D70CA4900461DFA /* ContactBooxtownViewController.swift */; };
 		5846C3B81D70CA8F00461DFA /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5846C3B71D70CA8F00461DFA /* SettingViewController.swift */; };
 		58C3AB0B1D7137A800C0305B /* AlertEditpassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C3AB0A1D7137A800C0305B /* AlertEditpassViewController.swift */; };
-		58C3AB0D1D7141AA00C0305B /* icon_close_custom.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 58C3AB0C1D7141AA00C0305B /* icon_close_custom.PNG */; };
-		58C3AB0F1D7142CB00C0305B /* close_popup.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 58C3AB0E1D7142CB00C0305B /* close_popup.PNG */; };
 		58C3AB121D71714800C0305B /* TabarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C3AB111D71714800C0305B /* TabarViewController.swift */; };
 		C50301061D6FDA5400055B01 /* ListingsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50301051D6FDA5400055B01 /* ListingsCollectionViewCell.swift */; };
 		C50301081D6FE21600055B01 /* book1.png in Resources */ = {isa = PBXBuildFile; fileRef = C50301071D6FE21600055B01 /* book1.png */; };
@@ -56,6 +52,9 @@
 		C526A5E71D6F490100BC05CE /* book.png in Resources */ = {isa = PBXBuildFile; fileRef = C526A5E61D6F490100BC05CE /* book.png */; };
 		C526A5E91D6F49D700BC05CE /* free.png in Resources */ = {isa = PBXBuildFile; fileRef = C526A5E81D6F49D700BC05CE /* free.png */; };
 		C526A5EB1D6F4A2E00BC05CE /* cart.png in Resources */ = {isa = PBXBuildFile; fileRef = C526A5EA1D6F4A2E00BC05CE /* cart.png */; };
+		C54B070F1D729107001F7E28 /* addbook.png in Resources */ = {isa = PBXBuildFile; fileRef = C54B070E1D729107001F7E28 /* addbook.png */; };
+		C54B07111D72B7CB001F7E28 /* NotificationInforTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54B07101D72B7CB001F7E28 /* NotificationInforTableViewCell.swift */; };
+		C54B07131D72B8E3001F7E28 /* notificationInforViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54B07121D72B8E3001F7E28 /* notificationInforViewController.swift */; };
 		C57BC9441D6BDD59003B2672 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = C57BC9431D6BDD59003B2672 /* test.png */; };
 		C581D8A91D6EDC870014E716 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C581D8A81D6EDC870014E716 /* ExploreViewController.swift */; };
 		C581D8AB1D6EDF730014E716 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C581D8AA1D6EDF730014E716 /* CustomCollectionViewCell.swift */; };
@@ -135,16 +134,12 @@
 		5846C3A41D70B2F600461DFA /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		5846C3A61D70BAB300461DFA /* FaqTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaqTableViewCell.swift; sourceTree = "<group>"; };
 		5846C3A81D70BB4900461DFA /* FaqViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaqViewController.swift; sourceTree = "<group>"; };
-		5846C3AA1D70BFDF00461DFA /* rateboox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rateboox.png; path = "../../../../Downloads/file xuat all/rateboox.png"; sourceTree = "<group>"; };
-		5846C3AB1D70BFDF00461DFA /* invitefriend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = invitefriend.png; path = "../../../../Downloads/file xuat all/invitefriend.png"; sourceTree = "<group>"; };
 		5846C3AE1D70C9A200461DFA /* InviteFriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteFriendViewController.swift; sourceTree = "<group>"; };
 		5846C3B11D70C9CD00461DFA /* RateBoxxtownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateBoxxtownViewController.swift; sourceTree = "<group>"; };
 		5846C3B31D70CA2100461DFA /* AboutBooxtownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutBooxtownViewController.swift; sourceTree = "<group>"; };
 		5846C3B51D70CA4900461DFA /* ContactBooxtownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactBooxtownViewController.swift; sourceTree = "<group>"; };
 		5846C3B71D70CA8F00461DFA /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		58C3AB0A1D7137A800C0305B /* AlertEditpassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertEditpassViewController.swift; sourceTree = "<group>"; };
-		58C3AB0C1D7141AA00C0305B /* icon_close_custom.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_close_custom.PNG; path = ../../../icon_close_custom.PNG; sourceTree = "<group>"; };
-		58C3AB0E1D7142CB00C0305B /* close_popup.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = close_popup.PNG; path = ../../../../../../Volumes/DAN/close_popup.PNG; sourceTree = "<group>"; };
 		58C3AB111D71714800C0305B /* TabarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabarViewController.swift; sourceTree = "<group>"; };
 		C50301051D6FDA5400055B01 /* ListingsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingsCollectionViewCell.swift; sourceTree = "<group>"; };
 		C50301071D6FE21600055B01 /* book1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book1.png; sourceTree = "<group>"; };
@@ -180,6 +175,9 @@
 		C526A5E61D6F490100BC05CE /* book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book.png; sourceTree = "<group>"; };
 		C526A5E81D6F49D700BC05CE /* free.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = free.png; sourceTree = "<group>"; };
 		C526A5EA1D6F4A2E00BC05CE /* cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cart.png; sourceTree = "<group>"; };
+		C54B070E1D729107001F7E28 /* addbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addbook.png; sourceTree = "<group>"; };
+		C54B07101D72B7CB001F7E28 /* NotificationInforTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationInforTableViewCell.swift; sourceTree = "<group>"; };
+		C54B07121D72B8E3001F7E28 /* notificationInforViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notificationInforViewController.swift; sourceTree = "<group>"; };
 		C57BC9431D6BDD59003B2672 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		C581D8A81D6EDC870014E716 /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		C581D8AA1D6EDF730014E716 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -288,8 +286,6 @@
 		C50A61A71D6B2A800027159F /* image */ = {
 			isa = PBXGroup;
 			children = (
-				58C3AB0E1D7142CB00C0305B /* close_popup.PNG */,
-				58C3AB0C1D7141AA00C0305B /* icon_close_custom.PNG */,
 				C50B21701D6DA5FA002A2166 /* line.png */,
 				C58CEFD91D6CD5BE000F0903 /* ic_bag_active.png */,
 				C58CEFDA1D6CD5BE000F0903 /* ic_bag_inactive.png */,
@@ -320,8 +316,7 @@
 		C581D8B21D6F1A010014E716 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				5846C3AA1D70BFDF00461DFA /* rateboox.png */,
-				5846C3AB1D70BFDF00461DFA /* invitefriend.png */,
+				C54B070E1D729107001F7E28 /* addbook.png */,
 				C5F63B541D7023BF0080D3FA /* staremty.png */,
 				C5F63B551D7023BF0080D3FA /* starfull.png */,
 				C503010D1D6FED9900055B01 /* respone.png */,
@@ -352,6 +347,7 @@
 				C5D4E14A1D70777A00D3FD8D /* ListingsCustomCollectionViewCell.swift */,
 				5846C3A21D70B1F600461DFA /* NotificationTableViewCell.swift */,
 				5846C3A61D70BAB300461DFA /* FaqTableViewCell.swift */,
+				C54B07101D72B7CB001F7E28 /* NotificationInforTableViewCell.swift */,
 			);
 			name = Adapter;
 			sourceTree = "<group>";
@@ -412,6 +408,7 @@
 				5846C3B31D70CA2100461DFA /* AboutBooxtownViewController.swift */,
 				5846C3B51D70CA4900461DFA /* ContactBooxtownViewController.swift */,
 				5846C3B71D70CA8F00461DFA /* SettingViewController.swift */,
+				C54B07121D72B8E3001F7E28 /* notificationInforViewController.swift */,
 			);
 			path = BooxTownApplication;
 			sourceTree = "<group>";
@@ -577,7 +574,6 @@
 				C581D8B41D6F1A9F0014E716 /* next.png in Resources */,
 				C5A420BA1D6D374C00FFBBF7 /* ic_bag_inactive_40.png in Resources */,
 				C5A420C11D6D374C00FFBBF7 /* ic_people_active_40.png in Resources */,
-				58C3AB0F1D7142CB00C0305B /* close_popup.PNG in Resources */,
 				C58CEFE71D6CD5BE000F0903 /* ic_location_active.png in Resources */,
 				C5A420C21D6D374C00FFBBF7 /* ic_people_inactive_40.png in Resources */,
 				C50B21AB1D6DDD0C002A2166 /* logout.PNG in Resources */,
@@ -607,6 +603,7 @@
 				C5A420BB1D6D374C00FFBBF7 /* ic_camera_active_40.png in Resources */,
 				C50301081D6FE21600055B01 /* book1.png in Resources */,
 				C503010E1D6FED9900055B01 /* respone.png in Resources */,
+				C54B070F1D729107001F7E28 /* addbook.png in Resources */,
 				C5F63B5F1D7026480080D3FA /* editimageprofile.png in Resources */,
 				C5CEE99A1D6B5652008504EA /* twetter.png in Resources */,
 				C5F63B5C1D7025640080D3FA /* rank2.png in Resources */,
@@ -616,14 +613,12 @@
 				C58CEFAD1D6C672C000F0903 /* icon_submit.png in Resources */,
 				C58CEFA91D6C43D1000F0903 /* icon_sigin2.png in Resources */,
 				C50B21A41D6DDD0C002A2166 /* about.PNG in Resources */,
-				5846C3AC1D70BFDF00461DFA /* rateboox.png in Resources */,
 				C50B21A81D6DDD0C002A2166 /* FQA.PNG in Resources */,
 				C58CEFAB1D6C602D000F0903 /* icon_back.png in Resources */,
 				C50B21AD1D6DDD0C002A2166 /* rate.PNG in Resources */,
 				C50B21791D6DAF6C002A2166 /* ic_fitersort.png in Resources */,
 				C5F63B571D7023BF0080D3FA /* starfull.png in Resources */,
 				C58CEFE41D6CD5BE000F0903 /* ic_bag_inactive.png in Resources */,
-				58C3AB0D1D7141AA00C0305B /* icon_close_custom.PNG in Resources */,
 				C50A61AA1D6B2B8D0027159F /* bg2.png in Resources */,
 				C58CEFE61D6CD5BE000F0903 /* ic_camera_inactive.png in Resources */,
 				C5CEE9991D6B5652008504EA /* g+.png in Resources */,
@@ -635,7 +630,6 @@
 				C503010A1D6FE81500055B01 /* line_hight.png in Resources */,
 				C50A61A61D6B2A790027159F /* bg4.jpg in Resources */,
 				C5A0B5401D6B25B40091615B /* Main.storyboard in Resources */,
-				5846C3AD1D70BFDF00461DFA /* invitefriend.png in Resources */,
 				C58CEFEA1D6CD5BE000F0903 /* ic_message_inactive.png in Resources */,
 				C50B21811D6DD702002A2166 /* cancel.PNG in Resources */,
 				C50A61A51D6B2A790027159F /* bg1.jpg in Resources */,
@@ -686,6 +680,8 @@
 				5846C3A31D70B1F600461DFA /* NotificationTableViewCell.swift in Sources */,
 				5846C3B41D70CA2100461DFA /* AboutBooxtownViewController.swift in Sources */,
 				5846C3A91D70BB4900461DFA /* FaqViewController.swift in Sources */,
+				C54B07111D72B7CB001F7E28 /* NotificationInforTableViewCell.swift in Sources */,
+				C54B07131D72B8E3001F7E28 /* notificationInforViewController.swift in Sources */,
 				C5D4E14B1D70777A00D3FD8D /* ListingsCustomCollectionViewCell.swift in Sources */,
 				5846C3B21D70C9CD00461DFA /* RateBoxxtownViewController.swift in Sources */,
 				C581D8AF1D6F11350014E716 /* CustomcellInteractTableViewCell.swift in Sources */,

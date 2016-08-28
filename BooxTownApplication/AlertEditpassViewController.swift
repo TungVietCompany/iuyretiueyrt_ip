@@ -15,13 +15,13 @@ class AlertEditpassViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var efec = UIBlurEffect(style: .Light)
-        var Bluview = UIVisualEffectView(effect: efec)
-        Bluview.frame = self.view.bounds
-        
-        view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.9)
-        myView.layer.cornerRadius = 10
-        btnEdit.layer.cornerRadius = 5
+//        var efec = UIBlurEffect(style: .Light)
+//        var Bluview = UIVisualEffectView(effect: efec)
+//        Bluview.frame = self.view.bounds
+//        
+//        view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.9)
+//        myView.layer.cornerRadius = 10
+//        btnEdit.layer.cornerRadius = 5
 
         // Do any additional setup after loading the view.
     }
