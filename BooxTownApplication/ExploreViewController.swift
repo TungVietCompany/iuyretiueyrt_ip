@@ -9,6 +9,9 @@
 import UIKit
 
 class ExploreViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate {
+    
+    
+    var arriMAGE : [String]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +40,7 @@ class ExploreViewController: UIViewController,UICollectionViewDataSource,UIColle
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! CustomCollectionViewCell
-        cell.myImage.image = UIImage(named: "logo.png")
+        cell.myImage.image = UIImage(named: "book")
         cell.myLable.text = "duong"
         
         
