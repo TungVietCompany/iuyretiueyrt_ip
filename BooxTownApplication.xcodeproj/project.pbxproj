@@ -43,6 +43,13 @@
 		586AFF301D74A15E002F9B8A /* gach chan ngan.png in Resources */ = {isa = PBXBuildFile; fileRef = 586AFF2F1D74A15E002F9B8A /* gach chan ngan.png */; };
 		586AFF331D74A1B0002F9B8A /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = 586AFF311D74A1B0002F9B8A /* down.png */; };
 		586AFF341D74A1B0002F9B8A /* logosplash.png in Resources */ = {isa = PBXBuildFile; fileRef = 586AFF321D74A1B0002F9B8A /* logosplash.png */; };
+		586AFF361D74ABA2002F9B8A /* FAQQuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AFF351D74ABA2002F9B8A /* FAQQuestionTableViewCell.swift */; };
+		586AFF381D74ABBE002F9B8A /* FAQQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AFF371D74ABBE002F9B8A /* FAQQuestionsViewController.swift */; };
+		586AFF3C1D74B387002F9B8A /* showmoreFaq.png in Resources */ = {isa = PBXBuildFile; fileRef = 586AFF3B1D74B387002F9B8A /* showmoreFaq.png */; };
+		586AFF3E1D74B488002F9B8A /* FAQViewQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AFF3D1D74B488002F9B8A /* FAQViewQuestionViewController.swift */; };
+		586AFF401D74B4BA002F9B8A /* FAQViewQuestionUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AFF3F1D74B4BA002F9B8A /* FAQViewQuestionUITableViewCell.swift */; };
+		586AFF451D74C80E002F9B8A /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AFF431D74C80E002F9B8A /* CustomTableViewCell.swift */; };
+		586AFF461D74C80E002F9B8A /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586AFF441D74C80E002F9B8A /* CustomTableViewCell.xib */; };
 		58C3AB0B1D7137A800C0305B /* AlertEditpassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C3AB0A1D7137A800C0305B /* AlertEditpassViewController.swift */; };
 		58C3AB121D71714800C0305B /* TabarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C3AB111D71714800C0305B /* TabarViewController.swift */; };
 		C50301061D6FDA5400055B01 /* ListingsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50301051D6FDA5400055B01 /* ListingsCollectionViewCell.swift */; };
@@ -193,6 +200,13 @@
 		586AFF2F1D74A15E002F9B8A /* gach chan ngan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gach chan ngan.png"; path = "../../../../Downloads/file xuat all/gach chan ngan.png"; sourceTree = "<group>"; };
 		586AFF311D74A1B0002F9B8A /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = down.png; path = "../../../../Downloads/file xuat all/down.png"; sourceTree = "<group>"; };
 		586AFF321D74A1B0002F9B8A /* logosplash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logosplash.png; path = "../../../../Downloads/file xuat all/logosplash.png"; sourceTree = "<group>"; };
+		586AFF351D74ABA2002F9B8A /* FAQQuestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQQuestionTableViewCell.swift; sourceTree = "<group>"; };
+		586AFF371D74ABBE002F9B8A /* FAQQuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQQuestionsViewController.swift; sourceTree = "<group>"; };
+		586AFF3B1D74B387002F9B8A /* showmoreFaq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = showmoreFaq.png; path = "../../../../Downloads/file xuat all/showmoreFaq.png"; sourceTree = "<group>"; };
+		586AFF3D1D74B488002F9B8A /* FAQViewQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQViewQuestionViewController.swift; sourceTree = "<group>"; };
+		586AFF3F1D74B4BA002F9B8A /* FAQViewQuestionUITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQViewQuestionUITableViewCell.swift; sourceTree = "<group>"; };
+		586AFF431D74C80E002F9B8A /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		586AFF441D74C80E002F9B8A /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		58C3AB0A1D7137A800C0305B /* AlertEditpassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertEditpassViewController.swift; sourceTree = "<group>"; };
 		58C3AB111D71714800C0305B /* TabarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabarViewController.swift; sourceTree = "<group>"; };
 		C50301051D6FDA5400055B01 /* ListingsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -377,6 +391,7 @@
 		C581D8B21D6F1A010014E716 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				586AFF3B1D74B387002F9B8A /* showmoreFaq.png */,
 				586AFF311D74A1B0002F9B8A /* down.png */,
 				586AFF321D74A1B0002F9B8A /* logosplash.png */,
 				586AFF2F1D74A15E002F9B8A /* gach chan ngan.png */,
@@ -430,6 +445,8 @@
 				586AFF1F1D745C21002F9B8A /* MenuTableViewCell.swift */,
 				586AFF211D7482EC002F9B8A /* InteractAddThreadTableViewCell.swift */,
 				586AFF2B1D748E31002F9B8A /* InteractChatTableViewCell.swift */,
+				586AFF351D74ABA2002F9B8A /* FAQQuestionTableViewCell.swift */,
+				586AFF3F1D74B4BA002F9B8A /* FAQViewQuestionUITableViewCell.swift */,
 			);
 			name = Adapter;
 			sourceTree = "<group>";
@@ -467,6 +484,7 @@
 				C58CEFC61D6C9CB0000F0903 /* Adapter */,
 				C50A61A71D6B2A800027159F /* image */,
 				C5A0B5681D6B266A0091615B /* PageContentViewController.swift */,
+				586AFF3D1D74B488002F9B8A /* FAQViewQuestionViewController.swift */,
 				C581D8A81D6EDC870014E716 /* ExploreViewController.swift */,
 				C5A0B5691D6B266A0091615B /* PageViewController.swift */,
 				C5A0B56A1D6B266A0091615B /* SplashViewController.swift */,
@@ -498,6 +516,9 @@
 				586AFF1D1D7455BB002F9B8A /* AddBookViewController.swift */,
 				586AFF231D74830C002F9B8A /* InteractAddThreadViewController.swift */,
 				586AFF2D1D748E4F002F9B8A /* InteractChatViewController.swift */,
+				586AFF371D74ABBE002F9B8A /* FAQQuestionsViewController.swift */,
+				586AFF431D74C80E002F9B8A /* CustomTableViewCell.swift */,
+				586AFF441D74C80E002F9B8A /* CustomTableViewCell.xib */,
 			);
 			path = BooxTownApplication;
 			sourceTree = "<group>";
@@ -673,6 +694,7 @@
 				586AFF2A1D7489DD002F9B8A /* lingray.png in Resources */,
 				C50B21AF1D6DDD0C002A2166 /* unsub.PNG in Resources */,
 				C50B21611D6D8B54002A2166 /* Podfile in Resources */,
+				586AFF3C1D74B387002F9B8A /* showmoreFaq.png in Resources */,
 				C5A0B5421D6B25B40091615B /* Assets.xcassets in Resources */,
 				C5A420BE1D6D374C00FFBBF7 /* ic_location_inactive_40.png in Resources */,
 				C58CEFA71D6C43C4000F0903 /* icon_sigup2.png in Resources */,
@@ -699,6 +721,7 @@
 				C50B21A91D6DDD0C002A2166 /* home.PNG in Resources */,
 				58030F4B1D74019C00A52BCB /* isCheck.png in Resources */,
 				C5A420BB1D6D374C00FFBBF7 /* ic_camera_active_40.png in Resources */,
+				586AFF461D74C80E002F9B8A /* CustomTableViewCell.xib in Resources */,
 				C50301081D6FE21600055B01 /* book1.png in Resources */,
 				C503010E1D6FED9900055B01 /* respone.png in Resources */,
 				C54B070F1D729107001F7E28 /* addbook.png in Resources */,
@@ -770,7 +793,9 @@
 				5846C3B81D70CA8F00461DFA /* SettingViewController.swift in Sources */,
 				C50B217D1D6DBD69002A2166 /* ListMenuTableViewCell.swift in Sources */,
 				586AFF201D745C21002F9B8A /* MenuTableViewCell.swift in Sources */,
+				586AFF451D74C80E002F9B8A /* CustomTableViewCell.swift in Sources */,
 				C50B217F1D6DBEF8002A2166 /* ListMenuTableViewController.swift in Sources */,
+				586AFF3E1D74B488002F9B8A /* FAQViewQuestionViewController.swift in Sources */,
 				C581D8B11D6F117E0014E716 /* InteractViewController.swift in Sources */,
 				C50301101D6FEE4F00055B01 /* WhishboardViewController.swift in Sources */,
 				5846C3B61D70CA4900461DFA /* ContactBooxtownViewController.swift in Sources */,
@@ -784,12 +809,15 @@
 				C5D4E1471D705E6600D3FD8D /* ProfileCollectionViewCell.swift in Sources */,
 				5846C3A51D70B2F600461DFA /* NotificationsViewController.swift in Sources */,
 				586AFF2E1D748E4F002F9B8A /* InteractChatViewController.swift in Sources */,
+				586AFF361D74ABA2002F9B8A /* FAQQuestionTableViewCell.swift in Sources */,
+				586AFF401D74B4BA002F9B8A /* FAQViewQuestionUITableViewCell.swift in Sources */,
 				C581D8A91D6EDC870014E716 /* ExploreViewController.swift in Sources */,
 				583B384C1D740BD6009FCF07 /* CheckBoxCircle.swift in Sources */,
 				5846C3A31D70B1F600461DFA /* NotificationTableViewCell.swift in Sources */,
 				586AFF1A1D744A1D002F9B8A /* FAQSelectBookListTableViewCell.swift in Sources */,
 				5846C3B41D70CA2100461DFA /* AboutBooxtownViewController.swift in Sources */,
 				58030F4E1D74021600A52BCB /* CheckBox.swift in Sources */,
+				586AFF381D74ABBE002F9B8A /* FAQQuestionsViewController.swift in Sources */,
 				5846C3A91D70BB4900461DFA /* FaqViewController.swift in Sources */,
 				C54B07111D72B7CB001F7E28 /* NotificationInforTableViewCell.swift in Sources */,
 				C54B07131D72B8E3001F7E28 /* notificationInforViewController.swift in Sources */,
