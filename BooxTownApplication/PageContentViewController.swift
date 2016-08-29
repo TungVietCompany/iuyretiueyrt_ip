@@ -30,16 +30,16 @@ class PageContentViewController: UIViewController {
         // Do any additional setup after loading the view.
        
         let screenSize: CGRect = UIScreen.mainScreen().bounds
-//        
-//        let bg = UIImage(named: strPhotoName)
-//        let bgView = UIImageView(image: bg)
-//        bgView.contentMode = UIViewContentMode.Center
-//        bgView.frame = CGRectMake(0, 0, screenSize.width, screenSize.height)
-//        self.view.insertSubview(bgView,atIndex:0)
+        
+        let bg = UIImage(named: strPhotoName)
+        let bgView = UIImageView(image: bg)
+        bgView.contentMode = UIViewContentMode.Center
+        bgView.frame = CGRectMake(0, 0, screenSize.width, screenSize.height)
+        self.view.insertSubview(bgView,atIndex:0)
         
 //        self.view.insertSubview(myViewBottom, atIndex: 2)
     
-//        self.view.backgroundColor = UIColor.init(patternImage: bg!)
+        self.view.backgroundColor = UIColor.init(patternImage: bg!)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

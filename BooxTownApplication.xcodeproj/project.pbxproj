@@ -28,6 +28,18 @@
 		5846C3B41D70CA2100461DFA /* AboutBooxtownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5846C3B31D70CA2100461DFA /* AboutBooxtownViewController.swift */; };
 		5846C3B61D70CA4900461DFA /* ContactBooxtownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5846C3B51D70CA4900461DFA /* ContactBooxtownViewController.swift */; };
 		5846C3B81D70CA8F00461DFA /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5846C3B71D70CA8F00461DFA /* SettingViewController.swift */; };
+		586AFF181D744A00002F9B8A /* FAQSelectBookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AFF171D744A00002F9B8A /* FAQSelectBookListViewController.swift */; };
+		586AFF1A1D744A1D002F9B8A /* FAQSelectBookListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AFF191D744A1D002F9B8A /* FAQSelectBookListTableViewCell.swift */; };
+		586AFF1C1D745586002F9B8A /* AddBookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AFF1B1D745586002F9B8A /* AddBookTableViewCell.swift */; };
+		586AFF1E1D7455BB002F9B8A /* AddBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AFF1D1D7455BB002F9B8A /* AddBookViewController.swift */; };
+		586AFF201D745C21002F9B8A /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AFF1F1D745C21002F9B8A /* MenuTableViewCell.swift */; };
+		586AFF221D7482EC002F9B8A /* InteractAddThreadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AFF211D7482EC002F9B8A /* InteractAddThreadTableViewCell.swift */; };
+		586AFF241D74830C002F9B8A /* InteractAddThreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AFF231D74830C002F9B8A /* InteractAddThreadViewController.swift */; };
+		586AFF261D748649002F9B8A /* editextmessage.png in Resources */ = {isa = PBXBuildFile; fileRef = 586AFF251D748649002F9B8A /* editextmessage.png */; };
+		586AFF281D748670002F9B8A /* sendmessage.png in Resources */ = {isa = PBXBuildFile; fileRef = 586AFF271D748670002F9B8A /* sendmessage.png */; };
+		586AFF2A1D7489DD002F9B8A /* lingray.png in Resources */ = {isa = PBXBuildFile; fileRef = 586AFF291D7489DD002F9B8A /* lingray.png */; };
+		586AFF2C1D748E31002F9B8A /* InteractChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AFF2B1D748E31002F9B8A /* InteractChatTableViewCell.swift */; };
+		586AFF2E1D748E4F002F9B8A /* InteractChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AFF2D1D748E4F002F9B8A /* InteractChatViewController.swift */; };
 		58C3AB0B1D7137A800C0305B /* AlertEditpassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C3AB0A1D7137A800C0305B /* AlertEditpassViewController.swift */; };
 		58C3AB121D71714800C0305B /* TabarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C3AB111D71714800C0305B /* TabarViewController.swift */; };
 		C50301061D6FDA5400055B01 /* ListingsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50301051D6FDA5400055B01 /* ListingsCollectionViewCell.swift */; };
@@ -163,6 +175,18 @@
 		5846C3B31D70CA2100461DFA /* AboutBooxtownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutBooxtownViewController.swift; sourceTree = "<group>"; };
 		5846C3B51D70CA4900461DFA /* ContactBooxtownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactBooxtownViewController.swift; sourceTree = "<group>"; };
 		5846C3B71D70CA8F00461DFA /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		586AFF171D744A00002F9B8A /* FAQSelectBookListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQSelectBookListViewController.swift; sourceTree = "<group>"; };
+		586AFF191D744A1D002F9B8A /* FAQSelectBookListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQSelectBookListTableViewCell.swift; sourceTree = "<group>"; };
+		586AFF1B1D745586002F9B8A /* AddBookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBookTableViewCell.swift; sourceTree = "<group>"; };
+		586AFF1D1D7455BB002F9B8A /* AddBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBookViewController.swift; sourceTree = "<group>"; };
+		586AFF1F1D745C21002F9B8A /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		586AFF211D7482EC002F9B8A /* InteractAddThreadTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractAddThreadTableViewCell.swift; sourceTree = "<group>"; };
+		586AFF231D74830C002F9B8A /* InteractAddThreadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractAddThreadViewController.swift; sourceTree = "<group>"; };
+		586AFF251D748649002F9B8A /* editextmessage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = editextmessage.png; path = "../../../../Downloads/file xuat all/editextmessage.png"; sourceTree = "<group>"; };
+		586AFF271D748670002F9B8A /* sendmessage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sendmessage.png; path = "../../../../Downloads/file xuat all/sendmessage.png"; sourceTree = "<group>"; };
+		586AFF291D7489DD002F9B8A /* lingray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lingray.png; path = "../../../../Downloads/file xuat all/lingray.png"; sourceTree = "<group>"; };
+		586AFF2B1D748E31002F9B8A /* InteractChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractChatTableViewCell.swift; sourceTree = "<group>"; };
+		586AFF2D1D748E4F002F9B8A /* InteractChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractChatViewController.swift; sourceTree = "<group>"; };
 		58C3AB0A1D7137A800C0305B /* AlertEditpassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertEditpassViewController.swift; sourceTree = "<group>"; };
 		58C3AB111D71714800C0305B /* TabarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabarViewController.swift; sourceTree = "<group>"; };
 		C50301051D6FDA5400055B01 /* ListingsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -347,6 +371,9 @@
 		C581D8B21D6F1A010014E716 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				586AFF291D7489DD002F9B8A /* lingray.png */,
+				586AFF271D748670002F9B8A /* sendmessage.png */,
+				586AFF251D748649002F9B8A /* editextmessage.png */,
 				583B38471D740BB3009FCF07 /* unCheckCircle.png */,
 				583B38481D740BB3009FCF07 /* isCheckCircle.png */,
 				58030F491D74019C00A52BCB /* isCheck.png */,
@@ -389,6 +416,11 @@
 				C54B07101D72B7CB001F7E28 /* NotificationInforTableViewCell.swift */,
 				58030F4D1D74021600A52BCB /* CheckBox.swift */,
 				583B384B1D740BD6009FCF07 /* CheckBoxCircle.swift */,
+				586AFF191D744A1D002F9B8A /* FAQSelectBookListTableViewCell.swift */,
+				586AFF1B1D745586002F9B8A /* AddBookTableViewCell.swift */,
+				586AFF1F1D745C21002F9B8A /* MenuTableViewCell.swift */,
+				586AFF211D7482EC002F9B8A /* InteractAddThreadTableViewCell.swift */,
+				586AFF2B1D748E31002F9B8A /* InteractChatTableViewCell.swift */,
 			);
 			name = Adapter;
 			sourceTree = "<group>";
@@ -453,6 +485,10 @@
 				C54B07121D72B8E3001F7E28 /* notificationInforViewController.swift */,
 				58030F431D73D1A900A52BCB /* ListDashBoradViewController.swift */,
 				583B384F1D7426A0009FCF07 /* FilterViewController.swift */,
+				586AFF171D744A00002F9B8A /* FAQSelectBookListViewController.swift */,
+				586AFF1D1D7455BB002F9B8A /* AddBookViewController.swift */,
+				586AFF231D74830C002F9B8A /* InteractAddThreadViewController.swift */,
+				586AFF2D1D748E4F002F9B8A /* InteractChatViewController.swift */,
 			);
 			path = BooxTownApplication;
 			sourceTree = "<group>";
@@ -621,7 +657,9 @@
 				C58CEFE71D6CD5BE000F0903 /* ic_location_active.png in Resources */,
 				C5A420C21D6D374C00FFBBF7 /* ic_people_inactive_40.png in Resources */,
 				C50B21AB1D6DDD0C002A2166 /* logout.PNG in Resources */,
+				586AFF281D748670002F9B8A /* sendmessage.png in Resources */,
 				C5A0B5451D6B25B40091615B /* LaunchScreen.storyboard in Resources */,
+				586AFF2A1D7489DD002F9B8A /* lingray.png in Resources */,
 				C50B21AF1D6DDD0C002A2166 /* unsub.PNG in Resources */,
 				C50B21611D6D8B54002A2166 /* Podfile in Resources */,
 				C5A0B5421D6B25B40091615B /* Assets.xcassets in Resources */,
@@ -672,6 +710,7 @@
 				C58CEFE61D6CD5BE000F0903 /* ic_camera_inactive.png in Resources */,
 				C5CEE9991D6B5652008504EA /* g+.png in Resources */,
 				C5A420BF1D6D374C00FFBBF7 /* ic_message_active_40.png in Resources */,
+				586AFF261D748649002F9B8A /* editextmessage.png in Resources */,
 				C5D4E1451D70450F00D3FD8D /* swap.png in Resources */,
 				C5CEE9981D6B5652008504EA /* fb.png in Resources */,
 				583B384E1D740D66009FCF07 /* updateyourmember.png in Resources */,
@@ -718,6 +757,7 @@
 				C5A0B56C1D6B266A0091615B /* PageContentViewController.swift in Sources */,
 				5846C3B81D70CA8F00461DFA /* SettingViewController.swift in Sources */,
 				C50B217D1D6DBD69002A2166 /* ListMenuTableViewCell.swift in Sources */,
+				586AFF201D745C21002F9B8A /* MenuTableViewCell.swift in Sources */,
 				C50B217F1D6DBEF8002A2166 /* ListMenuTableViewController.swift in Sources */,
 				C581D8B11D6F117E0014E716 /* InteractViewController.swift in Sources */,
 				C50301101D6FEE4F00055B01 /* WhishboardViewController.swift in Sources */,
@@ -727,11 +767,15 @@
 				C5A0B56D1D6B266A0091615B /* PageViewController.swift in Sources */,
 				5846C3A71D70BAB300461DFA /* FaqTableViewCell.swift in Sources */,
 				C581D8AB1D6EDF730014E716 /* CustomCollectionViewCell.swift in Sources */,
+				586AFF241D74830C002F9B8A /* InteractAddThreadViewController.swift in Sources */,
+				586AFF221D7482EC002F9B8A /* InteractAddThreadTableViewCell.swift in Sources */,
 				C5D4E1471D705E6600D3FD8D /* ProfileCollectionViewCell.swift in Sources */,
 				5846C3A51D70B2F600461DFA /* NotificationsViewController.swift in Sources */,
+				586AFF2E1D748E4F002F9B8A /* InteractChatViewController.swift in Sources */,
 				C581D8A91D6EDC870014E716 /* ExploreViewController.swift in Sources */,
 				583B384C1D740BD6009FCF07 /* CheckBoxCircle.swift in Sources */,
 				5846C3A31D70B1F600461DFA /* NotificationTableViewCell.swift in Sources */,
+				586AFF1A1D744A1D002F9B8A /* FAQSelectBookListTableViewCell.swift in Sources */,
 				5846C3B41D70CA2100461DFA /* AboutBooxtownViewController.swift in Sources */,
 				58030F4E1D74021600A52BCB /* CheckBox.swift in Sources */,
 				5846C3A91D70BB4900461DFA /* FaqViewController.swift in Sources */,
@@ -740,13 +784,17 @@
 				C5D4E14B1D70777A00D3FD8D /* ListingsCustomCollectionViewCell.swift in Sources */,
 				5846C3B21D70C9CD00461DFA /* RateBoxxtownViewController.swift in Sources */,
 				C581D8AF1D6F11350014E716 /* CustomcellInteractTableViewCell.swift in Sources */,
+				586AFF1E1D7455BB002F9B8A /* AddBookViewController.swift in Sources */,
 				C58CEFC81D6C9D07000F0903 /* MyTabBarViewController.swift in Sources */,
+				586AFF1C1D745586002F9B8A /* AddBookTableViewCell.swift in Sources */,
 				583B38501D7426A0009FCF07 /* FilterViewController.swift in Sources */,
 				C5D4E1491D705F5C00D3FD8D /* ProfileViewController.swift in Sources */,
 				C58CEFA31D6C36A8000F0903 /* SignInViewController.swift in Sources */,
 				58C3AB121D71714800C0305B /* TabarViewController.swift in Sources */,
 				5846C3AF1D70C9A200461DFA /* InviteFriendViewController.swift in Sources */,
+				586AFF181D744A00002F9B8A /* FAQSelectBookListViewController.swift in Sources */,
 				C5A0B56E1D6B266A0091615B /* SplashViewController.swift in Sources */,
+				586AFF2C1D748E31002F9B8A /* InteractChatTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

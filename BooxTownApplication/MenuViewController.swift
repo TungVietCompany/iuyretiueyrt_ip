@@ -13,17 +13,22 @@ class MenuViewController: UIViewController, UITableViewDataSource,UITableViewDel
     var arrMenu : [String]!
     
     var arrImage :[String]!
-
-    @IBOutlet weak var myTable: UITableView!
+    
+    @IBOutlet weak var tableListmenu: UITableView!
+    @IBOutlet weak var tabeMn: UIImageView!
+    
     override func viewDidLoad() {
-//        myTable.allowsSelection = true
         super.viewDidLoad()
             arrMenu = ["Home","Notifications","FAQ","Invite Friends","Rate BooxTown","About BooxTown","Contact BooxTown","Setting","Logout"]
             arrImage = ["home","notification","faq","invitefriend","ratebooxtown","aboutboox","contactbooxtown","setting","logout"]
         
-            myTable.dataSource = self
-            myTable.delegate = self
-        // Do any additional setup after loading the view.
+        tableListmenu.delegate = self
+        
+        tableListmenu.dataSource = self
+        
+        tableListmenu.backgroundColor = UIColor.clearColor()
+       
+            // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,9 +44,9 @@ class MenuViewController: UIViewController, UITableViewDataSource,UITableViewDel
 //        let cell = UITableViewCell(style: .Default, reuseIdentifier: "Cell") as! ListMenuTableViewCell
         
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! ListMenuTableViewCell
-        cell.myLable.text = arrMenu[indexPath.row]
-        cell.myImage.image = UIImage(named: arrImage[indexPath.row])
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! MenuTableViewCell
+        cell.lclmenu.text = arrMenu[indexPath.row]
+        cell.imagemenu.image = UIImage(named: arrImage[indexPath.row])
         cell.backgroundColor = UIColor.clearColor()
 //        switch indexPath.row {
 //        case 0:
@@ -58,7 +63,7 @@ class MenuViewController: UIViewController, UITableViewDataSource,UITableViewDel
         switch indexPath.row {
         case 0:
             let sb = UIStoryboard(name: "Main", bundle: nil)
-            let vc = sb.instantiateViewControllerWithIdentifier("MyTabBarViewController") as! MyTabBarViewController
+            let vc = sb.instantiateViewControllerWithIdentifier("BookLocaTorViewController") as! MyTabBarViewController
             self.presentViewController(vc, animated: true,completion: nil)
 
             break

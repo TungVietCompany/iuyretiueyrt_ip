@@ -13,10 +13,20 @@ class PageViewController:UIPageViewController, UIPageViewControllerDataSource{
 //    var arrPageTitle : NSArray = NSArray()
     var arrPagePhoto :NSArray = NSArray()
 //    var arrayTextView : NSArray = NSArray()
+     let pageControl = UIPageControl()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        pageControl.pageIndicatorTintColor = UIColor.grayColor()
+        pageControl.currentPageIndicatorTintColor = UIColor.whiteColor()
+        pageControl.backgroundColor = UIColor.darkGrayColor()
+        pageControl.numberOfPages = 4
+//        pageControl.currentPage = 3
+        pageControl.center = self.view.center
+        self.view.addSubview(pageControl)
         
+        pageControl.layer.position.y = self.view.frame.height/2 + 60;
+//        pageControl.updateCurrentPageDisplay()
         
 
         // Do any additional setup after loading the view.
@@ -39,23 +49,31 @@ class PageViewController:UIPageViewController, UIPageViewControllerDataSource{
     {
         let pageContent: PageContentViewController = viewController as! PageContentViewController
         var index = pageContent.pageIndext
+        
+        pageControl.currentPage = pageContent.pageIndext
+        
+        print("fdfgdgdfgfgfgfgfdgf",index)
         if ((index == 0) || (index == NSNotFound))
         {
             return nil
         }
         index--;
+        
         return getViewControllerAtIndex(index)
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController?
     {
         let pageContent: PageContentViewController = viewController as! PageContentViewController
+        
+        pageControl.currentPage = pageContent.pageIndext
         var index = pageContent.pageIndext
         if (index == NSNotFound)
         {
             return nil;
         }
         index++;
+
         if (index == arrPagePhoto.count)
         {
             return nil;
@@ -71,17 +89,19 @@ class PageViewController:UIPageViewController, UIPageViewControllerDataSource{
 //        pageContentViewController.strTiltle = "\(arrPageTitle[index])"
         pageContentViewController.strPhotoName = "\(arrPagePhoto[index])"
         pageContentViewController.pageIndext = index
-//        pageContentViewController.textView.text = "\(arrayTextView[index])"
+        //        pageContentViewController.textView.text = "\(arrayTextView[index])"
+        
+       
         return pageContentViewController
     }
     
-    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
-        return self.arrPagePhoto.count
-    }
-    
-    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
-        return 0
-    }
+//    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
+//        return self.arrPagePhoto.count
+//    }
+//    
+//    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
+//        return 0
+//    }
     
 
     /*
@@ -93,5 +113,8 @@ class PageViewController:UIPageViewController, UIPageViewControllerDataSource{
         // Pass the selected object to the new view controller.
     }
     */
+    
+
+    
 
 }
