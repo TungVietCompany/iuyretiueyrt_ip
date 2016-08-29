@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58030F3F1D73D0D300A52BCB /* ListDashboardUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58030F3E1D73D0D300A52BCB /* ListDashboardUITableViewCell.swift */; };
+		58030F441D73D1A900A52BCB /* ListDashBoradViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58030F431D73D1A900A52BCB /* ListDashBoradViewController.swift */; };
+		58030F461D73DBA300A52BCB /* dashboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 58030F451D73DBA300A52BCB /* dashboard.png */; };
+		58030F481D73DD7000A52BCB /* status.png in Resources */ = {isa = PBXBuildFile; fileRef = 58030F471D73DD7000A52BCB /* status.png */; };
+		58030F4B1D74019C00A52BCB /* isCheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 58030F491D74019C00A52BCB /* isCheck.png */; };
+		58030F4C1D74019C00A52BCB /* unCheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 58030F4A1D74019C00A52BCB /* unCheck.png */; };
+		58030F4E1D74021600A52BCB /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58030F4D1D74021600A52BCB /* CheckBox.swift */; };
+		583B38491D740BB3009FCF07 /* unCheckCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 583B38471D740BB3009FCF07 /* unCheckCircle.png */; };
+		583B384A1D740BB3009FCF07 /* isCheckCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 583B38481D740BB3009FCF07 /* isCheckCircle.png */; };
+		583B384C1D740BD6009FCF07 /* CheckBoxCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583B384B1D740BD6009FCF07 /* CheckBoxCircle.swift */; };
+		583B384E1D740D66009FCF07 /* updateyourmember.png in Resources */ = {isa = PBXBuildFile; fileRef = 583B384D1D740D66009FCF07 /* updateyourmember.png */; };
+		583B38501D7426A0009FCF07 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583B384F1D7426A0009FCF07 /* FilterViewController.swift */; };
 		5846C3A31D70B1F600461DFA /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5846C3A21D70B1F600461DFA /* NotificationTableViewCell.swift */; };
 		5846C3A51D70B2F600461DFA /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5846C3A41D70B2F600461DFA /* NotificationsViewController.swift */; };
 		5846C3A71D70BAB300461DFA /* FaqTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5846C3A61D70BAB300461DFA /* FaqTableViewCell.swift */; };
@@ -130,6 +142,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		58030F3E1D73D0D300A52BCB /* ListDashboardUITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDashboardUITableViewCell.swift; sourceTree = "<group>"; };
+		58030F431D73D1A900A52BCB /* ListDashBoradViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDashBoradViewController.swift; sourceTree = "<group>"; };
+		58030F451D73DBA300A52BCB /* dashboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dashboard.png; path = "../../../../Downloads/file xuat all/dashboard.png"; sourceTree = "<group>"; };
+		58030F471D73DD7000A52BCB /* status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = status.png; path = "../../../../Downloads/file xuat all/status.png"; sourceTree = "<group>"; };
+		58030F491D74019C00A52BCB /* isCheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = isCheck.png; path = "../../../../Downloads/file xuat all/isCheck.png"; sourceTree = "<group>"; };
+		58030F4A1D74019C00A52BCB /* unCheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = unCheck.png; path = "../../../../Downloads/file xuat all/unCheck.png"; sourceTree = "<group>"; };
+		58030F4D1D74021600A52BCB /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		583B38471D740BB3009FCF07 /* unCheckCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = unCheckCircle.png; path = "../../../../Downloads/file xuat all/unCheckCircle.png"; sourceTree = "<group>"; };
+		583B38481D740BB3009FCF07 /* isCheckCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = isCheckCircle.png; path = "../../../../Downloads/file xuat all/isCheckCircle.png"; sourceTree = "<group>"; };
+		583B384B1D740BD6009FCF07 /* CheckBoxCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxCircle.swift; sourceTree = "<group>"; };
+		583B384D1D740D66009FCF07 /* updateyourmember.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = updateyourmember.png; path = "../../../../Downloads/file xuat all/updateyourmember.png"; sourceTree = "<group>"; };
+		583B384F1D7426A0009FCF07 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		5846C3A21D70B1F600461DFA /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		5846C3A41D70B2F600461DFA /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		5846C3A61D70BAB300461DFA /* FaqTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaqTableViewCell.swift; sourceTree = "<group>"; };
@@ -267,6 +291,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58030F421D73D18A00A52BCB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
 		5846C3B01D70C9BA00461DFA /* alert */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,6 +347,11 @@
 		C581D8B21D6F1A010014E716 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				583B38471D740BB3009FCF07 /* unCheckCircle.png */,
+				583B38481D740BB3009FCF07 /* isCheckCircle.png */,
+				58030F491D74019C00A52BCB /* isCheck.png */,
+				58030F4A1D74019C00A52BCB /* unCheck.png */,
+				58030F451D73DBA300A52BCB /* dashboard.png */,
 				C54B070E1D729107001F7E28 /* addbook.png */,
 				C5F63B541D7023BF0080D3FA /* staremty.png */,
 				C5F63B551D7023BF0080D3FA /* starfull.png */,
@@ -325,12 +361,14 @@
 				C526A5E81D6F49D700BC05CE /* free.png */,
 				C526A5E61D6F490100BC05CE /* book.png */,
 				C50301091D6FE81500055B01 /* line_hight.png */,
+				58030F471D73DD7000A52BCB /* status.png */,
 				C581D8B31D6F1A9F0014E716 /* next.png */,
 				C5F63B581D7025640080D3FA /* rank1.png */,
 				C5F63B591D7025640080D3FA /* rank2.png */,
 				C5F63B5A1D7025640080D3FA /* rank3.png */,
 				C5D4E1441D70450F00D3FD8D /* swap.png */,
 				C5F63B5E1D7026480080D3FA /* editimageprofile.png */,
+				583B384D1D740D66009FCF07 /* updateyourmember.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -338,6 +376,7 @@
 		C58CEFC61D6C9CB0000F0903 /* Adapter */ = {
 			isa = PBXGroup;
 			children = (
+				58030F3E1D73D0D300A52BCB /* ListDashboardUITableViewCell.swift */,
 				C58CEFC71D6C9D07000F0903 /* MyTabBarViewController.swift */,
 				C581D8AA1D6EDF730014E716 /* CustomCollectionViewCell.swift */,
 				C581D8AE1D6F11340014E716 /* CustomcellInteractTableViewCell.swift */,
@@ -348,6 +387,8 @@
 				5846C3A21D70B1F600461DFA /* NotificationTableViewCell.swift */,
 				5846C3A61D70BAB300461DFA /* FaqTableViewCell.swift */,
 				C54B07101D72B7CB001F7E28 /* NotificationInforTableViewCell.swift */,
+				58030F4D1D74021600A52BCB /* CheckBox.swift */,
+				583B384B1D740BD6009FCF07 /* CheckBoxCircle.swift */,
 			);
 			name = Adapter;
 			sourceTree = "<group>";
@@ -377,6 +418,7 @@
 		C5A0B5391D6B25B30091615B /* BooxTownApplication */ = {
 			isa = PBXGroup;
 			children = (
+				58030F421D73D18A00A52BCB /* New Group */,
 				58C3AB101D716AAE00C0305B /* tabar */,
 				5846C3B01D70C9BA00461DFA /* alert */,
 				C581D8B21D6F1A010014E716 /* images */,
@@ -409,6 +451,8 @@
 				5846C3B51D70CA4900461DFA /* ContactBooxtownViewController.swift */,
 				5846C3B71D70CA8F00461DFA /* SettingViewController.swift */,
 				C54B07121D72B8E3001F7E28 /* notificationInforViewController.swift */,
+				58030F431D73D1A900A52BCB /* ListDashBoradViewController.swift */,
+				583B384F1D7426A0009FCF07 /* FilterViewController.swift */,
 			);
 			path = BooxTownApplication;
 			sourceTree = "<group>";
@@ -583,7 +627,9 @@
 				C5A0B5421D6B25B40091615B /* Assets.xcassets in Resources */,
 				C5A420BE1D6D374C00FFBBF7 /* ic_location_inactive_40.png in Resources */,
 				C58CEFA71D6C43C4000F0903 /* icon_sigup2.png in Resources */,
+				583B384A1D740BB3009FCF07 /* isCheckCircle.png in Resources */,
 				C50B21AA1D6DDD0C002A2166 /* invited.PNG in Resources */,
+				58030F481D73DD7000A52BCB /* status.png in Resources */,
 				C50B21711D6DA5FA002A2166 /* line.png in Resources */,
 				C5A420B91D6D374C00FFBBF7 /* ic_bag_active_40.png in Resources */,
 				C57BC9441D6BDD59003B2672 /* test.png in Resources */,
@@ -591,6 +637,7 @@
 				C526A5EB1D6F4A2E00BC05CE /* cart.png in Resources */,
 				C526A5E91D6F49D700BC05CE /* free.png in Resources */,
 				C5F63B5B1D7025640080D3FA /* rank1.png in Resources */,
+				58030F461D73DBA300A52BCB /* dashboard.png in Resources */,
 				C50A61AB1D6B2B8D0027159F /* bg3.jpg in Resources */,
 				C50B21AC1D6DDD0C002A2166 /* notification.PNG in Resources */,
 				C50A61A41D6B2A790027159F /* bg.jpg in Resources */,
@@ -600,6 +647,7 @@
 				C58CEFE81D6CD5BE000F0903 /* ic_location_inactive.png in Resources */,
 				C5A420BD1D6D374C00FFBBF7 /* ic_location_active_40.png in Resources */,
 				C50B21A91D6DDD0C002A2166 /* home.PNG in Resources */,
+				58030F4B1D74019C00A52BCB /* isCheck.png in Resources */,
 				C5A420BB1D6D374C00FFBBF7 /* ic_camera_active_40.png in Resources */,
 				C50301081D6FE21600055B01 /* book1.png in Resources */,
 				C503010E1D6FED9900055B01 /* respone.png in Resources */,
@@ -617,6 +665,7 @@
 				C58CEFAB1D6C602D000F0903 /* icon_back.png in Resources */,
 				C50B21AD1D6DDD0C002A2166 /* rate.PNG in Resources */,
 				C50B21791D6DAF6C002A2166 /* ic_fitersort.png in Resources */,
+				58030F4C1D74019C00A52BCB /* unCheck.png in Resources */,
 				C5F63B571D7023BF0080D3FA /* starfull.png in Resources */,
 				C58CEFE41D6CD5BE000F0903 /* ic_bag_inactive.png in Resources */,
 				C50A61AA1D6B2B8D0027159F /* bg2.png in Resources */,
@@ -625,6 +674,7 @@
 				C5A420BF1D6D374C00FFBBF7 /* ic_message_active_40.png in Resources */,
 				C5D4E1451D70450F00D3FD8D /* swap.png in Resources */,
 				C5CEE9981D6B5652008504EA /* fb.png in Resources */,
+				583B384E1D740D66009FCF07 /* updateyourmember.png in Resources */,
 				C5A420BC1D6D374C00FFBBF7 /* ic_camera_inactive_40.png in Resources */,
 				C50B21771D6DAEFB002A2166 /* 1.png in Resources */,
 				C503010A1D6FE81500055B01 /* line_hight.png in Resources */,
@@ -632,6 +682,7 @@
 				C5A0B5401D6B25B40091615B /* Main.storyboard in Resources */,
 				C58CEFEA1D6CD5BE000F0903 /* ic_message_inactive.png in Resources */,
 				C50B21811D6DD702002A2166 /* cancel.PNG in Resources */,
+				583B38491D740BB3009FCF07 /* unCheckCircle.png in Resources */,
 				C50A61A51D6B2A790027159F /* bg1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -660,7 +711,9 @@
 				C58CEFC51D6C8CFD000F0903 /* BookLocaTorViewController.swift in Sources */,
 				58C3AB0B1D7137A800C0305B /* AlertEditpassViewController.swift in Sources */,
 				C50B21B11D6DE3F6002A2166 /* MenuViewController.swift in Sources */,
+				58030F3F1D73D0D300A52BCB /* ListDashboardUITableViewCell.swift in Sources */,
 				C50301061D6FDA5400055B01 /* ListingsCollectionViewCell.swift in Sources */,
+				58030F441D73D1A900A52BCB /* ListDashBoradViewController.swift in Sources */,
 				C5CD09561D6F4FEB00BCD038 /* ListingsViewController.swift in Sources */,
 				C5A0B56C1D6B266A0091615B /* PageContentViewController.swift in Sources */,
 				5846C3B81D70CA8F00461DFA /* SettingViewController.swift in Sources */,
@@ -677,8 +730,10 @@
 				C5D4E1471D705E6600D3FD8D /* ProfileCollectionViewCell.swift in Sources */,
 				5846C3A51D70B2F600461DFA /* NotificationsViewController.swift in Sources */,
 				C581D8A91D6EDC870014E716 /* ExploreViewController.swift in Sources */,
+				583B384C1D740BD6009FCF07 /* CheckBoxCircle.swift in Sources */,
 				5846C3A31D70B1F600461DFA /* NotificationTableViewCell.swift in Sources */,
 				5846C3B41D70CA2100461DFA /* AboutBooxtownViewController.swift in Sources */,
+				58030F4E1D74021600A52BCB /* CheckBox.swift in Sources */,
 				5846C3A91D70BB4900461DFA /* FaqViewController.swift in Sources */,
 				C54B07111D72B7CB001F7E28 /* NotificationInforTableViewCell.swift in Sources */,
 				C54B07131D72B8E3001F7E28 /* notificationInforViewController.swift in Sources */,
@@ -686,6 +741,7 @@
 				5846C3B21D70C9CD00461DFA /* RateBoxxtownViewController.swift in Sources */,
 				C581D8AF1D6F11350014E716 /* CustomcellInteractTableViewCell.swift in Sources */,
 				C58CEFC81D6C9D07000F0903 /* MyTabBarViewController.swift in Sources */,
+				583B38501D7426A0009FCF07 /* FilterViewController.swift in Sources */,
 				C5D4E1491D705F5C00D3FD8D /* ProfileViewController.swift in Sources */,
 				C58CEFA31D6C36A8000F0903 /* SignInViewController.swift in Sources */,
 				58C3AB121D71714800C0305B /* TabarViewController.swift in Sources */,

@@ -1,38 +1,31 @@
 //
-//  SignInViewController.swift
+//  FilterViewController.swift
 //  BooxTownApplication
 //
-//  Created by Do Dang Duong on 8/23/16.
+//  Created by MtViet on 8/29/16.
 //  Copyright © 2016 DoDangDuong. All rights reserved.
 //
 
 import UIKit
 
-class SignInViewController: UIViewController {
+class FilterViewController: UIViewController {
 
-    @IBOutlet weak var table: UITableView!
-    
-    var satatus : Bool = false
-    
-    
-    @IBOutlet weak var myView: UIView!
-    
-    var count : Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         
-        let guse  = UITapGestureRecognizer(target: self, action:Selector("Onclick:"))
+        let gus = UITapGestureRecognizer(target: self, action: Selector("Onclick:"))
+        self.view.addSubview(filterView)
         
-        self.view.addSubview(myView)
-//        guse.delegate = self
-        myView.addGestureRecognizer(guse)
+        self.view.addSubview(cellfilter)
         
+        filterView.addGestureRecognizer(gus)
 
         // Do any additional setup after loading the view.
     }
     
-    func Onclick(sende : UITapGestureRecognizer)  {
-        table.hidden  = true
+    func Onclick(sender : UITapGestureRecognizer){
+        cellfilter.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,18 +33,15 @@ class SignInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    @IBOutlet weak var filterView: UIView!
+    
+    @IBOutlet weak var cellfilter: UIView!
+    
+
     @IBAction func btn(sender: AnyObject) {
-        if count == 0{
-            table.layer.hidden = true
-            count = 1
-        }else{
-            table.layer.hidden = false
-            count = 0
-
-        }
-        
-           }
-
+        cellfilter.layer.hidden = true
+    }
     /*
     // MARK: - Navigation
 
