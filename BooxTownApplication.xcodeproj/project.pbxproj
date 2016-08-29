@@ -50,6 +50,10 @@
 		586AFF401D74B4BA002F9B8A /* FAQViewQuestionUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AFF3F1D74B4BA002F9B8A /* FAQViewQuestionUITableViewCell.swift */; };
 		586AFF451D74C80E002F9B8A /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AFF431D74C80E002F9B8A /* CustomTableViewCell.swift */; };
 		586AFF461D74C80E002F9B8A /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 586AFF441D74C80E002F9B8A /* CustomTableViewCell.xib */; };
+		586AFF481D74D10C002F9B8A /* invitefriend.png in Resources */ = {isa = PBXBuildFile; fileRef = 586AFF471D74D10C002F9B8A /* invitefriend.png */; };
+		586AFF4A1D74D709002F9B8A /* close_popup.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 586AFF491D74D709002F9B8A /* close_popup.PNG */; };
+		586AFF4C1D74E504002F9B8A /* NotificationListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AFF4B1D74E504002F9B8A /* NotificationListTableViewCell.swift */; };
+		586AFF4E1D74E523002F9B8A /* NotificationListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AFF4D1D74E523002F9B8A /* NotificationListTableViewController.swift */; };
 		58C3AB0B1D7137A800C0305B /* AlertEditpassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C3AB0A1D7137A800C0305B /* AlertEditpassViewController.swift */; };
 		58C3AB121D71714800C0305B /* TabarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C3AB111D71714800C0305B /* TabarViewController.swift */; };
 		C50301061D6FDA5400055B01 /* ListingsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50301051D6FDA5400055B01 /* ListingsCollectionViewCell.swift */; };
@@ -207,6 +211,10 @@
 		586AFF3F1D74B4BA002F9B8A /* FAQViewQuestionUITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQViewQuestionUITableViewCell.swift; sourceTree = "<group>"; };
 		586AFF431D74C80E002F9B8A /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		586AFF441D74C80E002F9B8A /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		586AFF471D74D10C002F9B8A /* invitefriend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = invitefriend.png; path = "../../../../Downloads/file xuat all/invitefriend.png"; sourceTree = "<group>"; };
+		586AFF491D74D709002F9B8A /* close_popup.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = close_popup.PNG; path = ../../../../../../Volumes/DAN/close_popup.PNG; sourceTree = "<group>"; };
+		586AFF4B1D74E504002F9B8A /* NotificationListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationListTableViewCell.swift; sourceTree = "<group>"; };
+		586AFF4D1D74E523002F9B8A /* NotificationListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationListTableViewController.swift; sourceTree = "<group>"; };
 		58C3AB0A1D7137A800C0305B /* AlertEditpassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertEditpassViewController.swift; sourceTree = "<group>"; };
 		58C3AB111D71714800C0305B /* TabarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabarViewController.swift; sourceTree = "<group>"; };
 		C50301051D6FDA5400055B01 /* ListingsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -391,6 +399,8 @@
 		C581D8B21D6F1A010014E716 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				586AFF491D74D709002F9B8A /* close_popup.PNG */,
+				586AFF471D74D10C002F9B8A /* invitefriend.png */,
 				586AFF3B1D74B387002F9B8A /* showmoreFaq.png */,
 				586AFF311D74A1B0002F9B8A /* down.png */,
 				586AFF321D74A1B0002F9B8A /* logosplash.png */,
@@ -447,6 +457,7 @@
 				586AFF2B1D748E31002F9B8A /* InteractChatTableViewCell.swift */,
 				586AFF351D74ABA2002F9B8A /* FAQQuestionTableViewCell.swift */,
 				586AFF3F1D74B4BA002F9B8A /* FAQViewQuestionUITableViewCell.swift */,
+				586AFF4B1D74E504002F9B8A /* NotificationListTableViewCell.swift */,
 			);
 			name = Adapter;
 			sourceTree = "<group>";
@@ -519,6 +530,7 @@
 				586AFF371D74ABBE002F9B8A /* FAQQuestionsViewController.swift */,
 				586AFF431D74C80E002F9B8A /* CustomTableViewCell.swift */,
 				586AFF441D74C80E002F9B8A /* CustomTableViewCell.xib */,
+				586AFF4D1D74E523002F9B8A /* NotificationListTableViewController.swift */,
 			);
 			path = BooxTownApplication;
 			sourceTree = "<group>";
@@ -707,6 +719,7 @@
 				C50B21AE1D6DDD0C002A2166 /* setting.PNG in Resources */,
 				C526A5EB1D6F4A2E00BC05CE /* cart.png in Resources */,
 				C526A5E91D6F49D700BC05CE /* free.png in Resources */,
+				586AFF481D74D10C002F9B8A /* invitefriend.png in Resources */,
 				C5F63B5B1D7025640080D3FA /* rank1.png in Resources */,
 				586AFF331D74A1B0002F9B8A /* down.png in Resources */,
 				58030F461D73DBA300A52BCB /* dashboard.png in Resources */,
@@ -723,6 +736,7 @@
 				C5A420BB1D6D374C00FFBBF7 /* ic_camera_active_40.png in Resources */,
 				586AFF461D74C80E002F9B8A /* CustomTableViewCell.xib in Resources */,
 				C50301081D6FE21600055B01 /* book1.png in Resources */,
+				586AFF4A1D74D709002F9B8A /* close_popup.PNG in Resources */,
 				C503010E1D6FED9900055B01 /* respone.png in Resources */,
 				C54B070F1D729107001F7E28 /* addbook.png in Resources */,
 				C5F63B5F1D7026480080D3FA /* editimageprofile.png in Resources */,
@@ -788,6 +802,7 @@
 				58030F3F1D73D0D300A52BCB /* ListDashboardUITableViewCell.swift in Sources */,
 				C50301061D6FDA5400055B01 /* ListingsCollectionViewCell.swift in Sources */,
 				58030F441D73D1A900A52BCB /* ListDashBoradViewController.swift in Sources */,
+				586AFF4C1D74E504002F9B8A /* NotificationListTableViewCell.swift in Sources */,
 				C5CD09561D6F4FEB00BCD038 /* ListingsViewController.swift in Sources */,
 				C5A0B56C1D6B266A0091615B /* PageContentViewController.swift in Sources */,
 				5846C3B81D70CA8F00461DFA /* SettingViewController.swift in Sources */,
@@ -826,6 +841,7 @@
 				C581D8AF1D6F11350014E716 /* CustomcellInteractTableViewCell.swift in Sources */,
 				586AFF1E1D7455BB002F9B8A /* AddBookViewController.swift in Sources */,
 				C58CEFC81D6C9D07000F0903 /* MyTabBarViewController.swift in Sources */,
+				586AFF4E1D74E523002F9B8A /* NotificationListTableViewController.swift in Sources */,
 				586AFF1C1D745586002F9B8A /* AddBookTableViewCell.swift in Sources */,
 				583B38501D7426A0009FCF07 /* FilterViewController.swift in Sources */,
 				C5D4E1491D705F5C00D3FD8D /* ProfileViewController.swift in Sources */,
