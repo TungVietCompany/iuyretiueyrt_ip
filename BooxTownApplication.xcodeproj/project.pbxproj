@@ -40,6 +40,9 @@
 		586AFF2A1D7489DD002F9B8A /* lingray.png in Resources */ = {isa = PBXBuildFile; fileRef = 586AFF291D7489DD002F9B8A /* lingray.png */; };
 		586AFF2C1D748E31002F9B8A /* InteractChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AFF2B1D748E31002F9B8A /* InteractChatTableViewCell.swift */; };
 		586AFF2E1D748E4F002F9B8A /* InteractChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AFF2D1D748E4F002F9B8A /* InteractChatViewController.swift */; };
+		586AFF301D74A15E002F9B8A /* gach chan ngan.png in Resources */ = {isa = PBXBuildFile; fileRef = 586AFF2F1D74A15E002F9B8A /* gach chan ngan.png */; };
+		586AFF331D74A1B0002F9B8A /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = 586AFF311D74A1B0002F9B8A /* down.png */; };
+		586AFF341D74A1B0002F9B8A /* logosplash.png in Resources */ = {isa = PBXBuildFile; fileRef = 586AFF321D74A1B0002F9B8A /* logosplash.png */; };
 		58C3AB0B1D7137A800C0305B /* AlertEditpassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C3AB0A1D7137A800C0305B /* AlertEditpassViewController.swift */; };
 		58C3AB121D71714800C0305B /* TabarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C3AB111D71714800C0305B /* TabarViewController.swift */; };
 		C50301061D6FDA5400055B01 /* ListingsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50301051D6FDA5400055B01 /* ListingsCollectionViewCell.swift */; };
@@ -187,6 +190,9 @@
 		586AFF291D7489DD002F9B8A /* lingray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lingray.png; path = "../../../../Downloads/file xuat all/lingray.png"; sourceTree = "<group>"; };
 		586AFF2B1D748E31002F9B8A /* InteractChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractChatTableViewCell.swift; sourceTree = "<group>"; };
 		586AFF2D1D748E4F002F9B8A /* InteractChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractChatViewController.swift; sourceTree = "<group>"; };
+		586AFF2F1D74A15E002F9B8A /* gach chan ngan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gach chan ngan.png"; path = "../../../../Downloads/file xuat all/gach chan ngan.png"; sourceTree = "<group>"; };
+		586AFF311D74A1B0002F9B8A /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = down.png; path = "../../../../Downloads/file xuat all/down.png"; sourceTree = "<group>"; };
+		586AFF321D74A1B0002F9B8A /* logosplash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logosplash.png; path = "../../../../Downloads/file xuat all/logosplash.png"; sourceTree = "<group>"; };
 		58C3AB0A1D7137A800C0305B /* AlertEditpassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertEditpassViewController.swift; sourceTree = "<group>"; };
 		58C3AB111D71714800C0305B /* TabarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabarViewController.swift; sourceTree = "<group>"; };
 		C50301051D6FDA5400055B01 /* ListingsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -371,6 +377,9 @@
 		C581D8B21D6F1A010014E716 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				586AFF311D74A1B0002F9B8A /* down.png */,
+				586AFF321D74A1B0002F9B8A /* logosplash.png */,
+				586AFF2F1D74A15E002F9B8A /* gach chan ngan.png */,
 				586AFF291D7489DD002F9B8A /* lingray.png */,
 				586AFF271D748670002F9B8A /* sendmessage.png */,
 				586AFF251D748649002F9B8A /* editextmessage.png */,
@@ -648,10 +657,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C50B21A51D6DDD0C002A2166 /* close.PNG in Resources */,
+				586AFF301D74A15E002F9B8A /* gach chan ngan.png in Resources */,
 				C5A420C01D6D374C00FFBBF7 /* ic_message_inactive_40.png in Resources */,
 				C526A5E71D6F490100BC05CE /* book.png in Resources */,
 				C50B21A71D6DDD0C002A2166 /* contact.PNG in Resources */,
 				C581D8B41D6F1A9F0014E716 /* next.png in Resources */,
+				586AFF341D74A1B0002F9B8A /* logosplash.png in Resources */,
 				C5A420BA1D6D374C00FFBBF7 /* ic_bag_inactive_40.png in Resources */,
 				C5A420C11D6D374C00FFBBF7 /* ic_people_active_40.png in Resources */,
 				C58CEFE71D6CD5BE000F0903 /* ic_location_active.png in Resources */,
@@ -675,6 +686,7 @@
 				C526A5EB1D6F4A2E00BC05CE /* cart.png in Resources */,
 				C526A5E91D6F49D700BC05CE /* free.png in Resources */,
 				C5F63B5B1D7025640080D3FA /* rank1.png in Resources */,
+				586AFF331D74A1B0002F9B8A /* down.png in Resources */,
 				58030F461D73DBA300A52BCB /* dashboard.png in Resources */,
 				C50A61AB1D6B2B8D0027159F /* bg3.jpg in Resources */,
 				C50B21AC1D6DDD0C002A2166 /* notification.PNG in Resources */,
