@@ -22,6 +22,12 @@ class Screen50ViewController: UIViewController {
     }
     
 
+    @IBAction func btnSubmit(sender: AnyObject) {
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("Screen48") as! InteractAddThreadViewController
+        self.presentViewController(vc, animated: true,completion: nil)
+    }
     /*
     // MARK: - Navigation
 

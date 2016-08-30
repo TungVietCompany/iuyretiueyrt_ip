@@ -12,6 +12,12 @@ class Screen57ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+                var efec = UIBlurEffect(style: .Light)
+                var Bluview = UIVisualEffectView(effect: efec)
+                Bluview.frame = self.view.bounds
+        
+                view.backgroundColor = UIColor.grayColor().colorWithAlphaComponent(0.7)
 
         // Do any additional setup after loading the view.
     }

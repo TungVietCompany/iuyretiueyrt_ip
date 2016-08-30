@@ -24,8 +24,8 @@ class MenuViewController: UIViewController, UITableViewDataSource,UITableViewDel
     
     override func viewDidLoad() {
         super.viewDidLoad()
-            arrMenu = ["Home","Notifications","FAQ","Invite Friends","Rate BooxTown","About BooxTown","Contact BooxTown","Setting","Logout"]
-            arrImage = ["home","notification","faq","invitefriend","ratebooxtown","aboutboox","contactbooxtown","setting","logout"]
+            arrMenu = ["Home","Notifications","FAQ","Invite Friends","Rate BooxTown","About BooxTown","Contact BooxTown","Setting","Logout","Unsubcribe"]
+            arrImage = ["home","notification","faq","invitefriend","ratebooxtown","aboutboox","contactbooxtown","setting","logout","unsubcribe"]
         
         myTbale.delegate = self
         
@@ -120,7 +120,7 @@ class MenuViewController: UIViewController, UITableViewDataSource,UITableViewDel
 
         case 8:
             let sb = UIStoryboard(name: "Main", bundle: nil)
-            let vc = sb.instantiateViewControllerWithIdentifier("MyTabBarViewController") as! MyTabBarViewController
+            let vc = sb.instantiateViewControllerWithIdentifier("Screen9") as! BookLocaTorViewController
             self.presentViewController(vc, animated: true,completion: nil)
             break
 

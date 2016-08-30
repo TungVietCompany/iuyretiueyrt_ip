@@ -68,6 +68,13 @@ class FAQViewQuestionViewController: UIViewController,UITableViewDelegate,UITabl
         }
     }
     
+    @IBOutlet weak var btnHome: UIButton!
+    @IBAction func btnS59Home(sender: AnyObject) {
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("FaqViewController") as! FaqViewController
+        self.presentViewController(vc, animated: true,completion: nil)
+    }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         switch selected {

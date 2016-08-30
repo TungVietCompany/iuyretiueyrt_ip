@@ -21,6 +21,12 @@ class Screen53ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func btnSubmit(sender: AnyObject) {
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("Screen51") as! WhishboardViewController
+        self.presentViewController(vc, animated: true,completion: nil)
+    }
 
     /*
     // MARK: - Navigation
@@ -31,5 +37,12 @@ class Screen53ViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func btnClose(sender: AnyObject) {
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("Screen51") as! WhishboardViewController
+        self.presentViewController(vc, animated: true,completion: nil)
+
+    }
 
 }

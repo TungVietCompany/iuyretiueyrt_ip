@@ -14,6 +14,12 @@ class ListingsViewController: UIViewController,UICollectionViewDelegate,UICollec
     var arrBook : [String]!
     
     
+    @IBAction func cartbtn(sender: AnyObject) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("Screen39") as! Screen39ViewController
+        self.presentViewController(vc, animated: true,completion: nil)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         myCollection.dataSource = self
@@ -21,6 +27,16 @@ class ListingsViewController: UIViewController,UICollectionViewDelegate,UICollec
         tab.delegate = self
         myCollection.backgroundColor = UIColor.whiteColor()
         arrBook = ["book","book1","book","book1","book","book1","book","book1"]
+        
+        
+        let guse  = UITapGestureRecognizer(target: self, action:Selector("OnclickAddBook:"))
+        
+    
+//        self.view.addSubview(btnAddbook)
+        btnAddbook.addGestureRecognizer(guse)
+        
+       
+
 //
 
         // Do any additional setup after loading the view.
@@ -55,25 +71,25 @@ class ListingsViewController: UIViewController,UICollectionViewDelegate,UICollec
         switch item.tag{
         case 0:
             let stor = UIStoryboard(name: "Main", bundle: nil)
-            let alert = stor.instantiateViewControllerWithIdentifier("BookLocaTorViewController") as! BookLocaTorViewController
+            let alert = stor.instantiateViewControllerWithIdentifier("Screen9") as! BookLocaTorViewController
             self.presentViewController(alert, animated: false,completion: nil)
             
             break
         case 1:
             let stor = UIStoryboard(name: "Main", bundle: nil)
-            let alert = stor.instantiateViewControllerWithIdentifier("InteractViewController") as! InteractViewController
+            let alert = stor.instantiateViewControllerWithIdentifier("Screen47") as! InteractViewController
             self.presentViewController(alert, animated: false,completion: nil)
             
             break
         case 2:
             
             let stor = UIStoryboard(name: "Main", bundle: nil)
-            let alert = stor.instantiateViewControllerWithIdentifier("ListingsViewController") as! ListingsViewController
+            let alert = stor.instantiateViewControllerWithIdentifier("Screen42") as! ListingsViewController
             self.presentViewController(alert, animated: false,completion: nil)
             break
         case 3:
             let stor = UIStoryboard(name: "Main", bundle: nil)
-            let alert = stor.instantiateViewControllerWithIdentifier("WhishboardViewController") as! WhishboardViewController
+            let alert = stor.instantiateViewControllerWithIdentifier("Screen51") as! WhishboardViewController
             self.presentViewController(alert, animated: false,completion: nil)
             break
         case 4:
@@ -87,6 +103,21 @@ class ListingsViewController: UIViewController,UICollectionViewDelegate,UICollec
             break
         }
 
+    }
+    
+    @IBOutlet weak var btnAddbook: UIView!
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("Screen43") as! Screen43ViewController
+        self.presentViewController(vc, animated: true,completion: nil)
+    }
+    
+    func OnclickAddBook(sender : UITapGestureRecognizer){
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("Screen39") as! Screen39ViewController
+        self.presentViewController(vc, animated: true,completion: nil)
+        
     }
 
     /*

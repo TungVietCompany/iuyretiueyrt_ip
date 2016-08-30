@@ -30,8 +30,18 @@ class FaqViewController: UIViewController,UITableViewDataSource,UITableViewDeleg
     
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
         
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("Screen59") as! FAQViewQuestionViewController
+        self.presentViewController(vc, animated: true,completion: nil)
+        
     }
     
+    @IBAction func btnHome(sender: AnyObject) {
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("Screen46") as! MenuViewController
+        self.presentViewController(vc, animated: true,completion: nil)
+    }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = mytable.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! FaqTableViewCell
         

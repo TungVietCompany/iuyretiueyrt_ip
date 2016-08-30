@@ -12,6 +12,12 @@ class InteractAddThreadViewController: UIViewController,UITableViewDelegate,UITa
 
     @IBOutlet weak var tableInterractAddThread: UITableView!
     
+    @IBAction func btnAddThread(sender: AnyObject) {
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("Screen50") as! Screen50ViewController
+        self.presentViewController(vc, animated: true,completion: nil)
+    }
     
     var arrName : [String]!
     
@@ -42,6 +48,13 @@ class InteractAddThreadViewController: UIViewController,UITableViewDelegate,UITa
         cell.lblTitle.text = arrName[indexPath.row]
         cell.lblnumber.text = "20"
         return cell
+    }
+    
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("Screen49") as! InteractChatViewController
+        self.presentViewController(vc, animated: true,completion: nil)
     }
     
     /*

@@ -22,9 +22,7 @@ class SignInViewController: UIViewController {
         super.viewDidLoad()
         
         let guse  = UITapGestureRecognizer(target: self, action:Selector("Onclick:"))
-        
         self.view.addSubview(myView)
-//        guse.delegate = self
         myView.addGestureRecognizer(guse)
         
 

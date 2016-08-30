@@ -32,7 +32,28 @@ class WhishboardViewController: UIViewController,UITableViewDelegate,UITableView
         tabwish.delegate = self
         // Do any additional setup after loading the view.
     }
+    @IBAction func btnRespone(sender: AnyObject) {
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("Screen53") as! Screen53ViewController
+        self.presentViewController(vc, animated: true,completion: nil)
 
+    }
+
+    @IBAction func btnHome(sender: AnyObject) {
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("Screen46") as! MenuViewController
+        self.presentViewController(vc, animated: true,completion: nil)
+    }
+    @IBAction func btnExpert(sender: AnyObject) {
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("Screen52") as! Screen52ViewController
+        self.presentViewController(vc, animated: true,completion: nil)
+
+    }
+    @IBOutlet weak var btExpert: UIImageView!
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

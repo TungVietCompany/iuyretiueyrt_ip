@@ -17,7 +17,7 @@ class NotificationsViewController: UIViewController,UITableViewDelegate,UITableV
     @IBAction func btnHome(sender: AnyObject) {
         
         let sb = UIStoryboard(name: "Main", bundle: nil)
-        let vc = sb.instantiateViewControllerWithIdentifier("MenuViewController") as! MenuViewController
+        let vc = sb.instantiateViewControllerWithIdentifier("Screen46") as! MenuViewController
         self.presentViewController(vc, animated: true,completion: nil)
     }
     var arrDetail : [String]!
