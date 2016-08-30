@@ -32,7 +32,15 @@ class SplashViewController: UIViewController {
         let bg = UIImage(named: "bg.jpg")
         let bgView = UIImageView(image: bg)
         
+        let icon = UIImage(named: "logosplash")
+        
+        let IconVew = UIImageView(image: icon)
+        
+        IconVew.frame = CGRectMake(0, screenSize.height/2, screenSize.width, screenSize.height)
+        
         bgView.frame = CGRectMake(0, 0, screenSize.width, screenSize.height)
+        
+        self.view.addSubview(IconVew)
         self.view.addSubview(bgView)
     }
 

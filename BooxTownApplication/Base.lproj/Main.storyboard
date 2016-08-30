@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HiG-pp-2VQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -18,7 +18,25 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RNG-wb-WZI">
+                                <rect key="frame" x="0.0" y="170" width="320" height="128"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="logosplash" translatesAutoresizingMaskIntoConstraints="NO" id="rSL-4w-6W0">
+                                        <rect key="frame" x="30" y="-1" width="261" height="129"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="rSL-4w-6W0" firstAttribute="width" secondItem="RNG-wb-WZI" secondAttribute="width" id="x8Z-Iu-E4m"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rSL-4w-6W0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gkn-oU-zHc"/>
+                            <constraint firstItem="RNG-wb-WZI" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="yIU-qD-3r3"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
@@ -32,7 +50,7 @@
         <!--Page View Controller-->
         <scene sceneID="K25-4O-E3e">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Rza-os-7aa" customClass="PageViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Rza-os-7aa" customClass="PageViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="qIS-cV-kAn"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
@@ -212,7 +230,7 @@
         <!--View Question View Controller-->
         <scene sceneID="OmI-3Q-SXa">
             <objects>
-                <viewController id="SlS-w5-kEW" customClass="FAQViewQuestionViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen59" id="SlS-w5-kEW" customClass="FAQViewQuestionViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wCM-YS-xek"/>
                         <viewControllerLayoutGuide type="bottom" id="Idz-Q5-C41"/>
@@ -398,10 +416,10 @@
             </objects>
             <point key="canvasLocation" x="4834" y="458"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen53 View Controller-->
         <scene sceneID="G0b-q6-jgj">
             <objects>
-                <viewController id="zDa-Hb-bgi" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen53" id="zDa-Hb-bgi" customClass="Screen53ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qk4-jw-IJo"/>
                         <viewControllerLayoutGuide type="bottom" id="j5y-eQ-hD8"/>
@@ -495,10 +513,10 @@
             </objects>
             <point key="canvasLocation" x="5221" y="458"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen57 View Controller-->
         <scene sceneID="mwN-KS-BNp">
             <objects>
-                <viewController id="7yL-VR-2jF" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen57" id="7yL-VR-2jF" customClass="Screen57ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Cns-Os-rei"/>
                         <viewControllerLayoutGuide type="bottom" id="3Cs-eB-eqH"/>
@@ -596,7 +614,7 @@
         <!--List Dash Borad View Controller-->
         <scene sceneID="m4Q-Ac-xSg">
             <objects>
-                <viewController id="xiH-n1-mFE" customClass="ListDashBoradViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Sreen65" id="xiH-n1-mFE" customClass="ListDashBoradViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bQU-H6-nsc"/>
                         <viewControllerLayoutGuide type="bottom" id="Bif-3V-ywT"/>
@@ -940,7 +958,7 @@
         <!--Questions View Controller-->
         <scene sceneID="XEp-Nh-Hku">
             <objects>
-                <viewController id="1lT-FP-7o3" customClass="FAQQuestionsViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen58" id="1lT-FP-7o3" customClass="FAQQuestionsViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7er-42-SO7"/>
                         <viewControllerLayoutGuide type="bottom" id="sLc-hJ-qL5"/>
@@ -1086,10 +1104,10 @@
             </objects>
             <point key="canvasLocation" x="4436" y="463"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen6 View Controller-->
         <scene sceneID="awg-AM-3TN">
             <objects>
-                <viewController id="JO8-Ka-g0E" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen6" id="JO8-Ka-g0E" customClass="Screen6ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wjC-tJ-K2W"/>
                         <viewControllerLayoutGuide type="bottom" id="H5x-lJ-OK1"/>
@@ -1107,6 +1125,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rlc-ti-OSV">
                                                 <rect key="frame" x="0.0" y="0.0" width="61" height="61"/>
                                                 <state key="normal" image="back"/>
+                                                <connections>
+                                                    <action selector="btnS6Back:" destination="JO8-Ka-g0E" eventType="touchUpInside" id="7Ex-HH-cs9"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="849-8R-Ijq">
                                                 <rect key="frame" x="61" y="0.0" width="259" height="61"/>
@@ -1168,6 +1189,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pl0-Aa-tf3">
                                                 <rect key="frame" x="0.0" y="245" width="320" height="68"/>
                                                 <state key="normal" title="Button" image="sigup"/>
+                                                <connections>
+                                                    <action selector="btnS6Sigup:" destination="JO8-Ka-g0E" eventType="touchUpInside" id="AEW-B0-6xL"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -1209,10 +1233,10 @@
             </objects>
             <point key="canvasLocation" x="454" y="926"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen7 View Controller-->
         <scene sceneID="HUh-WG-npy">
             <objects>
-                <viewController id="9LY-us-mcP" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen7" id="9LY-us-mcP" customClass="Screen7ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hw5-D0-o2h"/>
                         <viewControllerLayoutGuide type="bottom" id="I4v-db-Ksq"/>
@@ -1230,6 +1254,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGI-on-cMr">
                                                 <rect key="frame" x="0.0" y="0.0" width="37" height="61"/>
                                                 <state key="normal" image="back"/>
+                                                <connections>
+                                                    <action selector="btnS7Back:" destination="9LY-us-mcP" eventType="touchUpInside" id="H8L-31-hOZ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkC-M8-Y0Y">
                                                 <rect key="frame" x="37" y="0.0" width="283" height="61"/>
@@ -1262,7 +1289,7 @@
                                                         <rect key="frame" x="80" y="0.0" width="160" height="68"/>
                                                         <state key="normal" image="sigin"/>
                                                         <connections>
-                                                            <segue destination="wwx-4D-E2u" kind="show" id="VQd-hf-IFn"/>
+                                                            <action selector="btnS7SigIn:" destination="9LY-us-mcP" eventType="touchUpInside" id="jhE-Mj-lyb"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1C-iY-frp">
@@ -1271,7 +1298,7 @@
                                                             <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="Cv9-qX-UVF" kind="show" id="y0i-6I-uId"/>
+                                                            <action selector="btnS7ForgotPassword:" destination="9LY-us-mcP" eventType="touchUpInside" id="Uex-gO-byJ"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1304,10 +1331,10 @@
             </objects>
             <point key="canvasLocation" x="971" y="996"/>
         </scene>
-        <!--Profile View Controller-->
+        <!--Screen62 View Controller-->
         <scene sceneID="6pE-XL-ES8">
             <objects>
-                <viewController storyboardIdentifier="ProfileViewController" id="AXA-bB-6T5" customClass="ProfileViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen62" id="AXA-bB-6T5" customClass="Screen62ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qbh-cx-393"/>
                         <viewControllerLayoutGuide type="bottom" id="1mg-Ut-X8U"/>
@@ -1988,7 +2015,7 @@
         <!--Book Loca Tor View Controller-->
         <scene sceneID="L6Q-Pu-WFR">
             <objects>
-                <viewController storyboardIdentifier="BookLocaTorViewController" id="wwx-4D-E2u" customClass="BookLocaTorViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen9" id="wwx-4D-E2u" customClass="BookLocaTorViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xxT-Dh-PPX"/>
                         <viewControllerLayoutGuide type="bottom" id="RWm-hw-iwT"/>
@@ -2018,6 +2045,9 @@
                                                                             <constraint firstAttribute="width" constant="30" id="CY0-bt-3hM"/>
                                                                         </constraints>
                                                                         <state key="normal" image="menu"/>
+                                                                        <connections>
+                                                                            <action selector="btnS9Home:" destination="wwx-4D-E2u" eventType="touchUpInside" id="CU0-hZ-pAe"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Locate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLL-3b-rOe">
                                                                         <rect key="frame" x="30" y="0.0" width="260" height="22"/>
@@ -2032,6 +2062,7 @@
                                                                         </constraints>
                                                                         <state key="normal" image="explore"/>
                                                                         <connections>
+                                                                            <action selector="btnS9Expore:" destination="wwx-4D-E2u" eventType="touchUpInside" id="pt8-TV-zF7"/>
                                                                             <segue destination="E9Y-bQ-T0E" kind="show" id="NQV-lw-Maa"/>
                                                                         </connections>
                                                                     </button>
@@ -2143,7 +2174,7 @@
         <!--Menu View Controller-->
         <scene sceneID="N2L-mK-S0S">
             <objects>
-                <viewController storyboardIdentifier="MenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Avp-Nx-eMW" customClass="MenuViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen46" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Avp-Nx-eMW" customClass="MenuViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uC4-SL-nzg"/>
                         <viewControllerLayoutGuide type="bottom" id="f5O-LM-7Lu"/>
@@ -2159,6 +2190,9 @@
                                     <constraint firstAttribute="height" constant="30" id="tUa-yq-pbw"/>
                                 </constraints>
                                 <state key="normal" image="menu_close"/>
+                                <connections>
+                                    <action selector="btnS46Close:" destination="Avp-Nx-eMW" eventType="touchUpInside" id="3z4-JJ-ZC3"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" pagingEnabled="YES" dataMode="prototypes" style="plain" sectionIndexMinimumDisplayRowCount="1" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="56" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lRX-av-i7n">
                                 <rect key="frame" x="-7" y="72" width="327" height="408"/>
@@ -2214,15 +2248,18 @@
                     </view>
                     <navigationItem key="navigationItem" id="90b-zp-dAh"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="myTbale" destination="lRX-av-i7n" id="Nd8-Yr-qsD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ysP-8k-5hB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2151" y="996"/>
         </scene>
-        <!--Invite Friend View Controller-->
+        <!--Screen60 View Controller-->
         <scene sceneID="3uE-ai-uxQ">
             <objects>
-                <viewController storyboardIdentifier="InviteFriendViewController" id="UVu-DD-VMZ" customClass="InviteFriendViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen60" id="UVu-DD-VMZ" customClass="Screen60ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yn3-Q8-sTv"/>
                         <viewControllerLayoutGuide type="bottom" id="2d4-u7-qpt"/>
@@ -2305,18 +2342,18 @@
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DFa-id-hOK">
                                 <rect key="frame" x="0.0" y="152" width="320" height="185"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0OB-KS-5K6">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0OB-KS-5K6">
                                         <rect key="frame" x="92" y="0.0" width="136" height="135"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uIg-BJ-UjO">
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uIg-BJ-UjO">
                                                 <rect key="frame" x="0.0" y="0.0" width="136" height="30"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L8c-1h-F2y">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L8c-1h-F2y">
                                                         <rect key="frame" x="0.0" y="0.0" width="111" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hE8-7X-e7W">
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hE8-7X-e7W">
                                                         <rect key="frame" x="111" y="0.0" width="25" height="30"/>
                                                         <state key="normal" image="invitefriend-1"/>
                                                     </button>
@@ -2325,20 +2362,20 @@
                                                     <constraint firstItem="L8c-1h-F2y" firstAttribute="top" secondItem="uIg-BJ-UjO" secondAttribute="top" constant="50" id="6ap-oW-ccW"/>
                                                 </constraints>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ReW-o0-eU6">
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ReW-o0-eU6">
                                                 <rect key="frame" x="0.0" y="35" width="136" height="100"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="abc@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d5j-Tx-MsE">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="abc@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d5j-Tx-MsE">
                                                         <rect key="frame" x="0.0" y="0.0" width="136" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="abc@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MxH-95-XmR">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="abc@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MxH-95-XmR">
                                                         <rect key="frame" x="0.0" y="35" width="136" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="abc@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uld-DX-YVH">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="abc@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uld-DX-YVH">
                                                         <rect key="frame" x="0.0" y="70" width="136" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -2347,7 +2384,7 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jrj-ce-F8Y">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jrj-ce-F8Y">
                                         <rect key="frame" x="80" y="155" width="160" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydq-5g-Nqo">
@@ -2386,10 +2423,10 @@
             </objects>
             <point key="canvasLocation" x="2747" y="341"/>
         </scene>
-        <!--Rate Boxxtown View Controller-->
+        <!--Screen61 View Controller-->
         <scene sceneID="RR1-1f-Ppg">
             <objects>
-                <viewController storyboardIdentifier="RateBooxtownViewController" id="GW0-rt-WT8" customClass="RateBoxxtownViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen61" id="GW0-rt-WT8" customClass="Screen61ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1JK-6O-Phf"/>
                         <viewControllerLayoutGuide type="bottom" id="KIN-Ey-fc3"/>
@@ -2543,7 +2580,7 @@
         <!--Explore View Controller-->
         <scene sceneID="nri-J8-xLi">
             <objects>
-                <viewController id="E9Y-bQ-T0E" customClass="ExploreViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen10" id="E9Y-bQ-T0E" customClass="ExploreViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dqt-Hd-o05"/>
                         <viewControllerLayoutGuide type="bottom" id="zPe-vC-C7r"/>
@@ -3031,10 +3068,10 @@
             </objects>
             <point key="canvasLocation" x="2987" y="990"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen16 View Controller-->
         <scene sceneID="tdV-eu-WOk">
             <objects>
-                <viewController id="jb6-8b-21s" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen16" id="jb6-8b-21s" customClass="Screen16ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eBc-yj-lfa"/>
                         <viewControllerLayoutGuide type="bottom" id="0Z4-Dt-TnR"/>
@@ -3108,10 +3145,10 @@
             </objects>
             <point key="canvasLocation" x="2963" y="1579"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen56 View Controller-->
         <scene sceneID="5YS-3s-h2Q">
             <objects>
-                <viewController id="Z5D-rH-WWB" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen56" id="Z5D-rH-WWB" customClass="Screen56ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xAN-fc-KIt"/>
                         <viewControllerLayoutGuide type="bottom" id="D0y-cr-zVG"/>
@@ -3152,7 +3189,7 @@
                                                     <!--2016-08-27 04:59:11 +0000-->
                                                 </date>
                                             </datePicker>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yva-Hx-4SJ">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yva-Hx-4SJ">
                                                 <rect key="frame" x="19" y="131" width="154" height="26"/>
                                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
@@ -3190,7 +3227,7 @@
         <!--Select Book List View Controller-->
         <scene sceneID="N3l-Ua-5qD">
             <objects>
-                <viewController id="Qvn-ul-fL8" customClass="FAQSelectBookListViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen15" id="Qvn-ul-fL8" customClass="FAQSelectBookListViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bv5-6t-GUf"/>
                         <viewControllerLayoutGuide type="bottom" id="FLg-9H-xGu"/>
@@ -3394,7 +3431,7 @@
         <!--Add Book View Controller-->
         <scene sceneID="pYv-rK-qSj">
             <objects>
-                <viewController id="2Nz-KQ-f85" customClass="AddBookViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen41" id="2Nz-KQ-f85" customClass="AddBookViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="82t-t0-O5g"/>
                         <viewControllerLayoutGuide type="bottom" id="qmr-eg-Q9d"/>
@@ -3469,13 +3506,22 @@
                                                     </tableView>
                                                 </subviews>
                                             </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQz-bk-LRA">
+                                                <rect key="frame" x="121" y="381" width="46" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Done">
+                                                    <color key="titleColor" red="0.91372549020000005" green="0.30196078430000001" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.91372549020000005" green="0.30196078430000001" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="UQz-bk-LRA" secondAttribute="bottom" constant="20" id="4Jc-Ro-4jN"/>
                                             <constraint firstAttribute="trailing" secondItem="qro-UR-7Rh" secondAttribute="trailing" id="9pd-Qt-zSa"/>
                                             <constraint firstItem="YRQ-oR-EXJ" firstAttribute="centerX" secondItem="Hpt-f2-Ba7" secondAttribute="centerX" id="Hnd-aw-evq"/>
                                             <constraint firstItem="qro-UR-7Rh" firstAttribute="top" secondItem="Hpt-f2-Ba7" secondAttribute="top" constant="-8" id="JL6-FT-Wko"/>
                                             <constraint firstItem="qro-UR-7Rh" firstAttribute="top" secondItem="Hpt-f2-Ba7" secondAttribute="top" id="aGq-Ub-fo9"/>
+                                            <constraint firstItem="UQz-bk-LRA" firstAttribute="width" secondItem="Hpt-f2-Ba7" secondAttribute="width" multiplier="0.7" id="cQG-A4-tzz"/>
                                             <constraint firstAttribute="trailing" secondItem="qro-UR-7Rh" secondAttribute="trailing" constant="-8" id="fQX-qM-fMc"/>
                                         </constraints>
                                     </view>
@@ -3492,6 +3538,7 @@
                             <constraint firstItem="c4W-PO-7sE" firstAttribute="centerY" secondItem="SGH-pS-THU" secondAttribute="centerY" id="PBc-DK-D5d"/>
                             <constraint firstItem="c4W-PO-7sE" firstAttribute="height" secondItem="SGH-pS-THU" secondAttribute="height" multiplier="0.9" id="PVW-x4-FCY"/>
                             <constraint firstItem="c4W-PO-7sE" firstAttribute="width" secondItem="SGH-pS-THU" secondAttribute="width" multiplier="0.9" id="Ryy-3A-edm"/>
+                            <constraint firstItem="UQz-bk-LRA" firstAttribute="centerX" secondItem="SGH-pS-THU" secondAttribute="centerX" id="XF5-rd-nFc"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
@@ -3503,10 +3550,10 @@
             </objects>
             <point key="canvasLocation" x="4536" y="1100"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen20 View Controller-->
         <scene sceneID="eVI-5Q-OZv">
             <objects>
-                <viewController id="IRW-6U-AzC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen20" id="IRW-6U-AzC" customClass="Screen20ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="djT-9c-zOF"/>
                         <viewControllerLayoutGuide type="bottom" id="b2S-pz-2lU"/>
@@ -3608,7 +3655,7 @@
         <!--Notification List Table View Controller-->
         <scene sceneID="0q9-Fn-Adq">
             <objects>
-                <viewController id="HiG-pp-2VQ" customClass="NotificationListTableViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen18" id="HiG-pp-2VQ" customClass="NotificationListTableViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2Tx-V9-ZNo"/>
                         <viewControllerLayoutGuide type="bottom" id="Eys-Kc-iC8"/>
@@ -3737,7 +3784,7 @@
         <!--Menu View Controller-->
         <scene sceneID="7ZL-zJ-qMN">
             <objects>
-                <viewController id="5Kz-Tv-qj3" customClass="MenuViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen461" id="5Kz-Tv-qj3" customClass="MenuViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lc1-4L-uPA"/>
                         <viewControllerLayoutGuide type="bottom" id="IbA-LJ-G96"/>
@@ -3822,10 +3869,10 @@
             </objects>
             <point key="canvasLocation" x="4999" y="1087"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen50 View Controller-->
         <scene sceneID="fDB-fj-hSx">
             <objects>
-                <viewController id="0dU-DY-TVT" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen50" id="0dU-DY-TVT" customClass="Screen50ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4Hl-KW-Rix"/>
                         <viewControllerLayoutGuide type="bottom" id="H0f-1p-cd0"/>
@@ -3913,10 +3960,10 @@
             </objects>
             <point key="canvasLocation" x="5424" y="1067"/>
         </scene>
-        <!--About Booxtown View Controller-->
+        <!--Screen71 View Controller-->
         <scene sceneID="uyi-b0-7Je">
             <objects>
-                <viewController storyboardIdentifier="outBooxtownViewController" id="hHg-yl-Aup" customClass="AboutBooxtownViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen71" id="hHg-yl-Aup" customClass="Screen71ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XN2-kA-4fA"/>
                         <viewControllerLayoutGuide type="bottom" id="4Re-nE-pnx"/>
@@ -3998,12 +4045,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r2h-NV-ppw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1799" y="1593"/>
+            <point key="canvasLocation" x="1799" y="1585"/>
         </scene>
-        <!--Contact Booxtown View Controller-->
+        <!--Screen72 View Controller-->
         <scene sceneID="jhr-9g-nRD">
             <objects>
-                <viewController storyboardIdentifier="ContactBooxtownViewController" id="N2M-kB-DMT" customClass="ContactBooxtownViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen72" id="N2M-kB-DMT" customClass="Screen72ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7e7-SO-jRA"/>
                         <viewControllerLayoutGuide type="bottom" id="brP-VS-Wbi"/>
@@ -4027,6 +4074,9 @@
                                                             <constraint firstAttribute="width" constant="30" id="g1G-ih-lqi"/>
                                                         </constraints>
                                                         <state key="normal" image="menu"/>
+                                                        <connections>
+                                                            <action selector="btnS72Home:" destination="N2M-kB-DMT" eventType="touchUpInside" id="gDm-p0-UJO"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Contact Booxtown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efd-Av-8uo">
                                                         <rect key="frame" x="30" y="0.0" width="290" height="22"/>
@@ -4144,10 +4194,10 @@
             </objects>
             <point key="canvasLocation" x="2160" y="1579"/>
         </scene>
-        <!--Setting View Controller-->
+        <!--Screen54 View Controller-->
         <scene sceneID="ehr-sQ-oRN">
             <objects>
-                <viewController storyboardIdentifier="SettingViewController" id="IxZ-Mm-Vlz" customClass="SettingViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen54" id="IxZ-Mm-Vlz" customClass="Screen54ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sfB-lE-YzG"/>
                         <viewControllerLayoutGuide type="bottom" id="lk1-dp-bK2"/>
@@ -4270,13 +4320,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="PpZ-wx-Odp">
                                         <rect key="frame" x="0.0" y="215" width="288" height="24"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Edit password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxJ-Ke-yNl">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Edit password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxJ-Ke-yNl">
                                                 <rect key="frame" x="0.0" y="0.0" width="250" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smg-tJ-PYz">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smg-tJ-PYz">
                                                 <rect key="frame" x="250" y="0.0" width="38" height="24"/>
                                                 <state key="normal" backgroundImage="next"/>
                                                 <connections>
@@ -4345,10 +4395,10 @@
             </objects>
             <point key="canvasLocation" x="2561" y="1579"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen8 View Controller-->
         <scene sceneID="190-UB-ZaQ">
             <objects>
-                <viewController id="Cv9-qX-UVF" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen8" id="Cv9-qX-UVF" customClass="Screen8ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="buP-Cf-0Y6"/>
                         <viewControllerLayoutGuide type="bottom" id="dgp-TU-LF3"/>
@@ -4378,15 +4428,6 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PYE-8x-wXb">
-                                <rect key="frame" x="0.0" y="265" width="320" height="74"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2T-kY-1es">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
-                                        <state key="normal" title="Button" image="submit"/>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZYy-vw-s3g">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
                                 <subviews>
@@ -4397,12 +4438,27 @@
                                         </constraints>
                                         <state key="normal" image="back"/>
                                         <connections>
-                                            <segue destination="9LY-us-mcP" kind="show" id="gjS-fw-Ev5"/>
+                                            <action selector="btnS8Back:" destination="Cv9-qX-UVF" eventType="touchUpInside" id="4I9-b6-oiT"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEc-dr-UzI">
                                         <rect key="frame" x="61" y="0.0" width="259" height="61"/>
                                         <state key="normal" image="logo.png"/>
+                                        <connections>
+                                            <action selector="btnS8Submit:" destination="Cv9-qX-UVF" eventType="touchUpInside" id="piL-nk-NNg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PYE-8x-wXb">
+                                <rect key="frame" x="0.0" y="265" width="320" height="74"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2T-kY-1es">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                                        <state key="normal" title="Button" image="submit"/>
+                                        <connections>
+                                            <action selector="btnS8Submit:" destination="Cv9-qX-UVF" eventType="touchUpInside" id="GE8-og-OfH"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -4431,12 +4487,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oES-Jh-k7l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="993" y="1549"/>
+            <point key="canvasLocation" x="866" y="1625"/>
         </scene>
         <!--Interact Add Thread View Controller-->
         <scene sceneID="Toy-gG-Bsh">
             <objects>
-                <viewController id="sli-JT-BI0" customClass="InteractAddThreadViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen48" id="sli-JT-BI0" customClass="InteractAddThreadViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yjO-fP-VCw"/>
                         <viewControllerLayoutGuide type="bottom" id="QRX-wL-96Q"/>
@@ -4629,10 +4685,10 @@
             </objects>
             <point key="canvasLocation" x="520" y="1489"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen39 View Controller-->
         <scene sceneID="dHo-J8-jdg">
             <objects>
-                <viewController id="CMU-MZ-cCp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen39" id="CMU-MZ-cCp" customClass="Screen39ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mYD-KD-mgn"/>
                         <viewControllerLayoutGuide type="bottom" id="TWl-S2-Z2k"/>
@@ -5070,10 +5126,10 @@
             </objects>
             <point key="canvasLocation" x="585" y="2116"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen17 View Controller-->
         <scene sceneID="Svc-e6-ixB">
             <objects>
-                <viewController id="2b9-FL-0y3" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen17" id="2b9-FL-0y3" customClass="Screen17ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6R5-Ac-j2s"/>
                         <viewControllerLayoutGuide type="bottom" id="T3N-RJ-f8Q"/>
@@ -5897,10 +5953,10 @@
             </objects>
             <point key="canvasLocation" x="1728" y="2128"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen21 View Controller-->
         <scene sceneID="0AQ-gl-Q8B">
             <objects>
-                <viewController id="yJe-MX-DUk" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen21" id="yJe-MX-DUk" customClass="Screen21ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D3A-Dj-aOC"/>
                         <viewControllerLayoutGuide type="bottom" id="hRb-Qm-8fT"/>
@@ -6002,10 +6058,10 @@
             </objects>
             <point key="canvasLocation" x="2091" y="2128"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen22 View Controller-->
         <scene sceneID="10g-Rh-uIk">
             <objects>
-                <viewController id="BDB-v9-yca" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen22" id="BDB-v9-yca" customClass="Screen22ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Mnq-vp-uef"/>
                         <viewControllerLayoutGuide type="bottom" id="gsk-wE-5n1"/>
@@ -6020,7 +6076,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qFA-ik-UMw">
                                         <rect key="frame" x="221" y="-12" width="40" height="40"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAW-hd-O1n">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAW-hd-O1n">
                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 <state key="normal" backgroundImage="close_popup"/>
                                             </button>
@@ -6096,10 +6152,10 @@
             </objects>
             <point key="canvasLocation" x="2460" y="2128"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen23 View Controller-->
         <scene sceneID="9IW-Av-x5v">
             <objects>
-                <viewController id="zOX-yk-bXe" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen23" id="zOX-yk-bXe" customClass="Screen23ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6wr-Dd-zhB"/>
                         <viewControllerLayoutGuide type="bottom" id="V9U-Nn-RzM"/>
@@ -6314,10 +6370,10 @@
             </objects>
             <point key="canvasLocation" x="2859" y="2128"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen24 View Controller-->
         <scene sceneID="Fko-mQ-DZp">
             <objects>
-                <viewController id="9pA-VK-8yH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen24" id="9pA-VK-8yH" customClass="Screen24ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zvm-VS-I3h"/>
                         <viewControllerLayoutGuide type="bottom" id="KnX-sD-CE9"/>
@@ -6568,10 +6624,10 @@
             </objects>
             <point key="canvasLocation" x="3221" y="2128"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen44 View Controller-->
         <scene sceneID="wt2-fR-LEk">
             <objects>
-                <viewController id="sOU-3f-wVq" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen44" id="sOU-3f-wVq" customClass="Screen44ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g78-pN-pki"/>
                         <viewControllerLayoutGuide type="bottom" id="G5M-Ho-YUa"/>
@@ -6655,10 +6711,10 @@
             </objects>
             <point key="canvasLocation" x="3346" y="1579"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen25 View Controller-->
         <scene sceneID="ce6-zz-gon">
             <objects>
-                <viewController id="BBH-Y7-qmq" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen25" id="BBH-Y7-qmq" customClass="Screen25ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bS7-1O-SHR"/>
                         <viewControllerLayoutGuide type="bottom" id="E0V-nr-3oD"/>
@@ -6930,10 +6986,10 @@
             </objects>
             <point key="canvasLocation" x="3589" y="2128"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen64 View Controller-->
         <scene sceneID="Bus-Ch-EO9">
             <objects>
-                <viewController id="F1R-S6-1GK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen64" id="F1R-S6-1GK" customClass="Screen64ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JQ7-yc-DeY"/>
                         <viewControllerLayoutGuide type="bottom" id="7TV-Qx-Gpc"/>
@@ -7015,10 +7071,10 @@
             </objects>
             <point key="canvasLocation" x="3874" y="1579"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen26 View Controller-->
         <scene sceneID="44W-pF-dp8">
             <objects>
-                <viewController id="JGi-OY-mSA" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen26" id="JGi-OY-mSA" customClass="Screen26ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JWj-vp-Eck"/>
                         <viewControllerLayoutGuide type="bottom" id="DMJ-Zy-fPj"/>
@@ -7295,10 +7351,10 @@
             </objects>
             <point key="canvasLocation" x="4001" y="2128"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen27 View Controller-->
         <scene sceneID="LzQ-lI-zIV">
             <objects>
-                <viewController id="yov-Xs-b5i" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen27" id="yov-Xs-b5i" customClass="Screen27ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tTb-m0-ZkF"/>
                         <viewControllerLayoutGuide type="bottom" id="W9R-nY-W1w"/>
@@ -7538,10 +7594,10 @@
             </objects>
             <point key="canvasLocation" x="4375" y="2128"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen30 View Controller-->
         <scene sceneID="ofI-FO-QQG">
             <objects>
-                <viewController id="67S-12-W31" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen30" id="67S-12-W31" customClass="Screen30ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UlH-ge-dd4"/>
                         <viewControllerLayoutGuide type="bottom" id="ioV-9f-PjZ"/>
@@ -7836,10 +7892,10 @@
             </objects>
             <point key="canvasLocation" x="2859" y="2674"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen31 View Controller-->
         <scene sceneID="Vkt-3T-mVE">
             <objects>
-                <viewController id="r9s-cm-5WB" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen31" id="r9s-cm-5WB" customClass="Screen31ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yST-6A-Sxh"/>
                         <viewControllerLayoutGuide type="bottom" id="Ars-1y-klY"/>
@@ -8348,10 +8404,10 @@
             </objects>
             <point key="canvasLocation" x="3589" y="2674"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen68 View Controller-->
         <scene sceneID="tbW-hD-wBu">
             <objects>
-                <viewController id="iza-38-0Zk" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen68" id="iza-38-0Zk" customClass="Screen68ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DKW-ac-Ndu"/>
                         <viewControllerLayoutGuide type="bottom" id="1wz-D9-gI4"/>
@@ -8726,10 +8782,10 @@
             </objects>
             <point key="canvasLocation" x="3967" y="2674"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen28 View Controller-->
         <scene sceneID="khz-fN-BzA">
             <objects>
-                <viewController id="dk9-nK-P7a" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen28" id="dk9-nK-P7a" customClass="Screen28ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="266-lB-19G"/>
                         <viewControllerLayoutGuide type="bottom" id="pXh-Y0-iJ6"/>
@@ -8960,10 +9016,10 @@
             </objects>
             <point key="canvasLocation" x="4785" y="2128"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen67 View Controller-->
         <scene sceneID="ow0-4R-40E">
             <objects>
-                <viewController id="FLl-OY-zY7" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen67" id="FLl-OY-zY7" customClass="Screen67ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="x5l-Z2-ZVK"/>
                         <viewControllerLayoutGuide type="bottom" id="rKm-L9-VUz"/>
@@ -9276,10 +9332,10 @@
             </objects>
             <point key="canvasLocation" x="4488" y="2743"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen74 View Controller-->
         <scene sceneID="lou-SY-uQ3">
             <objects>
-                <viewController id="wvZ-1R-Phr" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen74" id="wvZ-1R-Phr" customClass="Screen74ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Srq-da-RGK"/>
                         <viewControllerLayoutGuide type="bottom" id="O0G-aV-bma"/>
@@ -9509,10 +9565,10 @@
             </objects>
             <point key="canvasLocation" x="4864" y="2743"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen11 View Controller-->
         <scene sceneID="fKD-ui-Xlm">
             <objects>
-                <viewController id="vIX-dG-yIe" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen11" id="vIX-dG-yIe" customClass="Screen11ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="neK-I0-2Bd"/>
                         <viewControllerLayoutGuide type="bottom" id="I7m-kj-Nnn"/>
@@ -9778,10 +9834,10 @@
             </objects>
             <point key="canvasLocation" x="5269" y="2706"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen29 View Controller-->
         <scene sceneID="FeK-80-i1e">
             <objects>
-                <viewController id="12t-xc-HYv" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen29" id="12t-xc-HYv" customClass="Screen29ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XE2-DR-Y6S"/>
                         <viewControllerLayoutGuide type="bottom" id="5QQ-CV-ewV"/>
@@ -10271,7 +10327,7 @@
         <!--Listings View Controller-->
         <scene sceneID="wpL-tr-cxV">
             <objects>
-                <viewController storyboardIdentifier="ListingsViewController" id="Psr-6D-k21" customClass="ListingsViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen42" id="Psr-6D-k21" customClass="ListingsViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="W9X-E3-WoX"/>
                         <viewControllerLayoutGuide type="bottom" id="hTY-DR-GeJ"/>
@@ -10579,7 +10635,7 @@
         <!--Whishboard View Controller-->
         <scene sceneID="MPK-Dg-CSi">
             <objects>
-                <viewController storyboardIdentifier="WhishboardViewController" id="RCF-pF-ZE9" customClass="WhishboardViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen51" id="RCF-pF-ZE9" customClass="WhishboardViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="R0W-B2-aAJ"/>
                         <viewControllerLayoutGuide type="bottom" id="3ya-m2-xrs"/>
@@ -10806,7 +10862,7 @@
         <!--Interact View Controller-->
         <scene sceneID="IjQ-9e-xqh">
             <objects>
-                <viewController storyboardIdentifier="InteractViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EN2-MX-ixh" customClass="InteractViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen47" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EN2-MX-ixh" customClass="InteractViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nnq-HQ-hlk"/>
                         <viewControllerLayoutGuide type="bottom" id="Z3c-bv-SvM"/>
@@ -10875,6 +10931,31 @@
                                     <constraint firstItem="NRT-k8-d12" firstAttribute="leading" secondItem="9Fa-Cd-eNe" secondAttribute="leading" constant="5" id="k2h-qh-vpb"/>
                                 </constraints>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dPf-qO-quF">
+                                <rect key="frame" x="0.0" y="421" width="320" height="53"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line.png" translatesAutoresizingMaskIntoConstraints="NO" id="caM-lp-nlb">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="3" id="KYW-e0-tb9"/>
+                                        </constraints>
+                                    </imageView>
+                                    <tabBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x6L-AG-wgM">
+                                        <rect key="frame" x="0.0" y="3" width="320" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="rY7-Mb-sxn"/>
+                                        </constraints>
+                                        <items>
+                                            <tabBarItem title="" image="location" selectedImage="location_active" id="pzM-RY-SoS"/>
+                                            <tabBarItem tag="1" title="" image="message" selectedImage="message_active" id="jg6-8h-jjR"/>
+                                            <tabBarItem tag="2" title="" image="camera" selectedImage="camera_active" id="I1L-pD-Kvd"/>
+                                            <tabBarItem tag="3" title="" image="bag" selectedImage="bag_active" id="09A-Tk-kmB"/>
+                                            <tabBarItem tag="4" title="" image="people" selectedImage="people_active" id="1lr-u0-FqJ"/>
+                                        </items>
+                                    </tabBar>
+                                </subviews>
+                            </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fkh-qJ-hhj">
                                 <rect key="frame" x="34" y="143" width="320" height="288"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -10977,31 +11058,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dPf-qO-quF">
-                                <rect key="frame" x="0.0" y="421" width="320" height="53"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line.png" translatesAutoresizingMaskIntoConstraints="NO" id="caM-lp-nlb">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="3" id="KYW-e0-tb9"/>
-                                        </constraints>
-                                    </imageView>
-                                    <tabBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x6L-AG-wgM">
-                                        <rect key="frame" x="0.0" y="3" width="320" height="50"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="rY7-Mb-sxn"/>
-                                        </constraints>
-                                        <items>
-                                            <tabBarItem title="" image="location" selectedImage="location_active" id="pzM-RY-SoS"/>
-                                            <tabBarItem tag="1" title="" image="message" selectedImage="message_active" id="jg6-8h-jjR"/>
-                                            <tabBarItem tag="2" title="" image="camera" selectedImage="camera_active" id="I1L-pD-Kvd"/>
-                                            <tabBarItem tag="3" title="" image="bag" selectedImage="bag_active" id="09A-Tk-kmB"/>
-                                            <tabBarItem tag="4" title="" image="people" selectedImage="people_active" id="1lr-u0-FqJ"/>
-                                        </items>
-                                    </tabBar>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -11518,10 +11574,10 @@
             </objects>
             <point key="canvasLocation" x="162" y="2116"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen69 View Controller-->
         <scene sceneID="Y6d-ze-RTY">
             <objects>
-                <viewController id="9oc-lC-TMD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen69" id="9oc-lC-TMD" customClass="Screen69ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jhl-um-duA"/>
                         <viewControllerLayoutGuide type="bottom" id="ed0-sc-OVB"/>
@@ -11599,11 +11655,10 @@
             </objects>
             <point key="canvasLocation" x="189" y="2679"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen52 View Controller-->
         <scene sceneID="pNM-kT-kJd">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DC6-0C-MUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="3Nb-kj-7kW" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen52ViewController" id="3Nb-kj-7kW" customClass="Screen52ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ySX-Te-poB"/>
                         <viewControllerLayoutGuide type="bottom" id="DX3-oQ-0pg"/>
@@ -11961,17 +12016,17 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="abl-tu-ZP4">
                                         <rect key="frame" x="16" y="389" width="288" height="30"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oF0-ac-UW4">
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oF0-ac-UW4">
                                                 <rect key="frame" x="0.0" y="0.0" width="248" height="30"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" background="editextmessage.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kld-PU-s9c">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" background="editextmessage.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kld-PU-s9c">
                                                         <rect key="frame" x="0.0" y="0.0" width="248" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4aq-27-ELT">
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4aq-27-ELT">
                                                 <rect key="frame" x="248" y="0.0" width="40" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdt-GP-5pQ">
@@ -12056,13 +12111,14 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DC6-0C-MUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="557" y="2674"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen73 View Controller-->
         <scene sceneID="e1K-L8-mfB">
             <objects>
-                <viewController id="31t-6b-70R" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen73" id="31t-6b-70R" customClass="Screen73ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FKq-OL-CAv"/>
                         <viewControllerLayoutGuide type="bottom" id="tSP-FY-MDO"/>
@@ -12145,7 +12201,7 @@
         <!--Interact Chat View Controller-->
         <scene sceneID="0B0-52-Ewf">
             <objects>
-                <viewController id="2zO-zG-2xm" customClass="InteractChatViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen49" id="2zO-zG-2xm" customClass="InteractChatViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oIl-AC-pJ2"/>
                         <viewControllerLayoutGuide type="bottom" id="QMY-pS-rbn"/>
@@ -12639,10 +12695,10 @@
             </objects>
             <point key="canvasLocation" x="1663" y="2679"/>
         </scene>
-        <!--View Controller-->
+        <!--Screen43 View Controller-->
         <scene sceneID="HGW-bm-CXP">
             <objects>
-                <viewController id="2Rm-Mw-CEK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Screen43" id="2Rm-Mw-CEK" customClass="Screen43ViewController" customModule="BooxTownApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="r3b-AR-eJX"/>
                         <viewControllerLayoutGuide type="bottom" id="baw-YN-Ac6"/>
@@ -13641,6 +13697,7 @@
         <image name="location_active" width="15" height="20"/>
         <image name="logo" width="259" height="61"/>
         <image name="logo.png" width="259" height="61"/>
+        <image name="logosplash" width="226" height="59"/>
         <image name="menu" width="15" height="15"/>
         <image name="menu_close" width="20" height="20"/>
         <image name="message" width="21" height="20"/>
@@ -13666,7 +13723,4 @@
         <image name="unCheckCircle" width="13" height="13"/>
         <image name="updateyourmember" width="15" height="11"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="gjS-fw-Ev5"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -14,7 +14,12 @@ class MenuViewController: UIViewController, UITableViewDataSource,UITableViewDel
     
     var arrImage :[String]!
     
+    @IBOutlet weak var myTbale: UITableView!
+    
+    
     @IBOutlet weak var tableListmenu: UITableView!
+    
+    
     @IBOutlet weak var tabeMn: UIImageView!
     
     override func viewDidLoad() {
@@ -22,15 +27,21 @@ class MenuViewController: UIViewController, UITableViewDataSource,UITableViewDel
             arrMenu = ["Home","Notifications","FAQ","Invite Friends","Rate BooxTown","About BooxTown","Contact BooxTown","Setting","Logout"]
             arrImage = ["home","notification","faq","invitefriend","ratebooxtown","aboutboox","contactbooxtown","setting","logout"]
         
-        tableListmenu.delegate = self
+        myTbale.delegate = self
         
-        tableListmenu.dataSource = self
+        myTbale.dataSource = self
         
-        tableListmenu.backgroundColor = UIColor.clearColor()
+        myTbale.backgroundColor = UIColor.clearColor()
        
             // Do any additional setup after loading the view.
     }
 
+    @IBAction func btnS46Close(sender: AnyObject) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("Screen9") as! BookLocaTorViewController
+        self.presentViewController(vc, animated: true,completion: nil)
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -41,12 +52,12 @@ class MenuViewController: UIViewController, UITableViewDataSource,UITableViewDel
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        let cell = UITableViewCell(style: .Default, reuseIdentifier: "Cell") as! ListMenuTableViewCell
+        let cell =  tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! ListMenuTableViewCell
         
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! MenuTableViewCell
-        cell.lclmenu.text = arrMenu[indexPath.row]
-        cell.imagemenu.image = UIImage(named: arrImage[indexPath.row])
+//        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! MenuTableViewCell
+        cell.myLable.text = arrMenu[indexPath.row]
+        cell.myImage.image = UIImage(named: arrImage[indexPath.row])
         cell.backgroundColor = UIColor.clearColor()
 //        switch indexPath.row {
 //        case 0:
@@ -63,7 +74,7 @@ class MenuViewController: UIViewController, UITableViewDataSource,UITableViewDel
         switch indexPath.row {
         case 0:
             let sb = UIStoryboard(name: "Main", bundle: nil)
-            let vc = sb.instantiateViewControllerWithIdentifier("BookLocaTorViewController") as! MyTabBarViewController
+            let vc = sb.instantiateViewControllerWithIdentifier("Screen9") as! BookLocaTorViewController
             self.presentViewController(vc, animated: true,completion: nil)
 
             break
@@ -79,31 +90,31 @@ class MenuViewController: UIViewController, UITableViewDataSource,UITableViewDel
             break
         case 3:
             let sb = UIStoryboard(name: "Main", bundle: nil)
-            let vc = sb.instantiateViewControllerWithIdentifier("InviteFriendViewController") as! InviteFriendViewController
+            let vc = sb.instantiateViewControllerWithIdentifier("Screen60") as! Screen60ViewController
             self.presentViewController(vc, animated: true,completion: nil)
             break
 
         case 4:
             let sb = UIStoryboard(name: "Main", bundle: nil)
-            let vc = sb.instantiateViewControllerWithIdentifier("RateBoxxtownViewController") as! RateBoxxtownViewController
+            let vc = sb.instantiateViewControllerWithIdentifier("Screen61") as! Screen61ViewController
             self.presentViewController(vc, animated: true,completion: nil)
             break
 
         case 5:
             let sb = UIStoryboard(name: "Main", bundle: nil)
-            let vc = sb.instantiateViewControllerWithIdentifier("AboutBooxtownViewController") as! AboutBooxtownViewController
+            let vc = sb.instantiateViewControllerWithIdentifier("Screen71") as! Screen71ViewController
             self.presentViewController(vc, animated: true,completion: nil)
             break
 
         case 6:
             let sb = UIStoryboard(name: "Main", bundle: nil)
-            let vc = sb.instantiateViewControllerWithIdentifier("ContactBooxtownViewController") as! ContactBooxtownViewController
+            let vc = sb.instantiateViewControllerWithIdentifier("Screen72") as! Screen72ViewController
             self.presentViewController(vc, animated: true,completion: nil)
             break
 
         case 7:
             let sb = UIStoryboard(name: "Main", bundle: nil)
-            let vc = sb.instantiateViewControllerWithIdentifier("SettingViewController") as! SettingViewController
+            let vc = sb.instantiateViewControllerWithIdentifier("Screen54") as! Screen54ViewController
             self.presentViewController(vc, animated: true,completion: nil)
             break
 
@@ -115,7 +126,7 @@ class MenuViewController: UIViewController, UITableViewDataSource,UITableViewDel
 
         case 9:
             let sb = UIStoryboard(name: "Main", bundle: nil)
-            let vc = sb.instantiateViewControllerWithIdentifier("MyTabBarViewController") as! MyTabBarViewController
+            let vc = sb.instantiateViewControllerWithIdentifier("Screen73") as! Screen73ViewController
             self.presentViewController(vc, animated: true,completion: nil)
             break
 

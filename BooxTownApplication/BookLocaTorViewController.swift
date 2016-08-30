@@ -22,10 +22,26 @@ class BookLocaTorViewController: UIViewController,UITabBarDelegate {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func btnS9Home(sender: AnyObject) {
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("Screen46") as! MenuViewController
+        self.presentViewController(vc, animated: true,completion: nil)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func btnS9Expore(sender: AnyObject) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("Screen10") as! ExploreViewController
+        self.presentViewController(vc, animated: true,completion: nil)
+        
+    }
+    
+    
+    
     
     func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem) {
         switch item.tag{
