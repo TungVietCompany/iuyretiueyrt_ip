@@ -16,9 +16,9 @@ class Screen39ViewController: UIViewController {
         super.viewDidLoad()
 
         
-        scrollView.contentSize.height = 1000
-        
-        scroll.contentSize.height = 1000
+//        scrollView.contentSize.height = 1000
+//        
+        scroll.contentSize.height = 600
         // Do any additional setup after loading the view.
     }
 
