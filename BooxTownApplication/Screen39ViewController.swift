@@ -10,9 +10,15 @@ import UIKit
 
 class Screen39ViewController: UIViewController {
 
+    @IBOutlet weak var scroll: UIScrollView!
+    @IBOutlet weak var scrollView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        scrollView.contentSize.height = 1000
+        
+        scroll.contentSize.height = 1000
         // Do any additional setup after loading the view.
     }
 

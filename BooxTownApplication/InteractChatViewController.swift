@@ -20,6 +20,8 @@ class InteractChatViewController: UIViewController,UITableViewDelegate,UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         arrnName = ["duong","long","viet"]
         
         arrMessage = ["hello","hello","hello"]
@@ -30,7 +32,19 @@ class InteractChatViewController: UIViewController,UITableViewDelegate,UITableVi
 
         // Do any additional setup after loading the view.
     }
+    
+    
+    func iMageClick(sender : UITapGestureRecognizer){
+        
+        
+        let stor = UIStoryboard(name: "Main", bundle: nil)
+        let alert = stor.instantiateViewControllerWithIdentifier("Screen62") as! ProfileViewController
+        self.presentViewController(alert, animated: false,completion: nil)
+        
 
+        
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -52,8 +66,17 @@ class InteractChatViewController: UIViewController,UITableViewDelegate,UITableVi
         
         cell.lblmessage.text = arrMessage[indexPath.row]
         
+        let tasgue = UITapGestureRecognizer(target: self, action: Selector("iMageClick:"))
+        
+        cell.imageprofile.userInteractionEnabled = true
+        
+        cell.imageprofile.addGestureRecognizer(tasgue)
+        
+        
         return cell
     }
+    
+    
 
     /*
     // MARK: - Navigation

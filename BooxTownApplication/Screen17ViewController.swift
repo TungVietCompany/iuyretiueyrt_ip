@@ -10,9 +10,11 @@ import UIKit
 
 class Screen17ViewController: UIViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        scrollView.contentSize.height = 700
         // Do any additional setup after loading the view.
     }
 
@@ -21,6 +23,12 @@ class Screen17ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func btnAddBook(sender: AnyObject) {
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("Screen15") as! FAQSelectBookListViewController
+        self.presentViewController(vc, animated: true,completion: nil)
+    }
 
     /*
     // MARK: - Navigation

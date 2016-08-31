@@ -9,11 +9,18 @@
 import UIKit
 
 class InteractChatTableViewCell: UITableViewCell {
+    
+    
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+
         // Initialization code
     }
+    
+
     @IBOutlet weak var lblusername: UILabel!
     @IBOutlet weak var imageprofile: UIImageView!
 

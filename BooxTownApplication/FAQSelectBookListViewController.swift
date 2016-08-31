@@ -23,6 +23,21 @@ arrName = ["Any","The lsat painting of sara de vas","The last painting","Never a
         Faqtable.dataSource = self
     }
 
+    @IBAction func btnSwap(sender: AnyObject) {
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("Screen21") as! Screen21ViewController
+        self.presentViewController(vc, animated: true,completion: nil)
+
+        
+    }
+    @IBAction func btnAddaBook(sender: AnyObject) {
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("Screen17") as! Screen17ViewController
+        self.presentViewController(vc, animated: true,completion: nil)
+
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

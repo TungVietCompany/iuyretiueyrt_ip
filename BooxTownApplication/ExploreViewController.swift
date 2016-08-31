@@ -86,29 +86,44 @@ class ExploreViewController: UIViewController,UICollectionViewDataSource,UIColle
         
     }
     
+    @IBAction func btnFree(sender: AnyObject) {
+    }
     
+    @IBAction func btnDashborad(sender: AnyObject) {
+        
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("Screen15") as! FAQSelectBookListViewController
+        self.presentViewController(vc, animated: true,completion: nil)
+    }
     
+    @IBAction func btnCart(sender: AnyObject) {
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("Screen44") as! Screen44ViewController
+        self.presentViewController(vc, animated: true,completion: nil)
+    }
     func OnclickView1(sender1 : UITapGestureRecognizer){
         
-       updateView1()
+//       updateView1()
     }
     
     func OnclickView2(sender2 : UITapGestureRecognizer){
         
-        updateView2()
+//        updateView2()
         
     }
     
     func OnclickView3(sender3 : UITapGestureRecognizer){
         
-       updateView3()
+//       updateView3()
         
         
     }
     
     func OnclickView4(sender4 : UITapGestureRecognizer){
         
-       updateView4()
+//       updateView4()
         
     }
     @IBAction func btnFiter(sender: AnyObject) {

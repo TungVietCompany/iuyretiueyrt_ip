@@ -95,7 +95,7 @@ class ListingsViewController: UIViewController,UICollectionViewDelegate,UICollec
         case 4:
             
             let stor = UIStoryboard(name: "Main", bundle: nil)
-            let alert = stor.instantiateViewControllerWithIdentifier("ProfileViewController") as! ProfileViewController
+            let alert = stor.instantiateViewControllerWithIdentifier("Screen62") as! ProfileViewController
             self.presentViewController(alert, animated: false,completion: nil)
             
             break

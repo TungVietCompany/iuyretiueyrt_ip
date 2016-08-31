@@ -21,6 +21,13 @@ class InteractAddThreadViewController: UIViewController,UITableViewDelegate,UITa
     
     var arrName : [String]!
     
+    @IBAction func btnBack(sender: AnyObject) {
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("Screen47") as! InteractViewController
+        self.presentViewController(vc, animated: true,completion: nil)
+
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

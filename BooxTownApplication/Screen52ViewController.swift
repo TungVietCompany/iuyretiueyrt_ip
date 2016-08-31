@@ -21,8 +21,25 @@ class Screen52ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func btnBack(sender: AnyObject) {
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("Screen51") as! WhishboardViewController
+        self.presentViewController(vc, animated: true,completion: nil)
+    }
 
+    @IBAction func btnCheckoutListings(sender: AnyObject) {
+        
+        
+    }
+    @IBAction func btnAddBook(sender: AnyObject) {
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("Screen17") as! Screen17ViewController
+        self.presentViewController(vc, animated: true,completion: nil)
+    }
     /*
+     @IBOutlet weak var btnCheckOut: UIButton!
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation

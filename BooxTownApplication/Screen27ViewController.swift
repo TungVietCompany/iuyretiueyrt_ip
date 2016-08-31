@@ -16,11 +16,23 @@ class Screen27ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func btnAcept(sender: AnyObject) {
+        let stor = UIStoryboard(name: "Main", bundle: nil)
+        let alert = stor.instantiateViewControllerWithIdentifier("Screen28") as! Screen28ViewController
+        self.presentViewController(alert, animated: false,completion: nil)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func btnReject(sender: AnyObject) {
+        let stor = UIStoryboard(name: "Main", bundle: nil)
+        let alert = stor.instantiateViewControllerWithIdentifier("Screen28") as! Screen28ViewController
+        self.presentViewController(alert, animated: false,completion: nil)
+    }
+    
+
 
     /*
     // MARK: - Navigation

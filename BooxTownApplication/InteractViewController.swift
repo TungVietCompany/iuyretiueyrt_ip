@@ -27,11 +27,19 @@ class InteractViewController: UIViewController,UITableViewDataSource,UITableView
         tab.delegate = self
     }
 
+    @IBOutlet weak var btnHome: UIButton!
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func btnBackHome(sender: AnyObject) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewControllerWithIdentifier("Screen46") as! MenuViewController
+        self.presentViewController(vc, animated: true,completion: nil)
+
+        
+    }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrTemTitle.count
     }

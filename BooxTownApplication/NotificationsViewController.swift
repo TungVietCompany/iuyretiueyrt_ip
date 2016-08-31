@@ -25,10 +25,10 @@ class NotificationsViewController: UIViewController,UITableViewDelegate,UITableV
         super.viewDidLoad()
 
         arrHead = [
-            "this is dem mo Notifications","this is dem mo Notifications","this is dem mo Notifications","this is dem mo Notifications","this is dem mo Notifications","this is dem mo Notifications","this is dem mo Notifications","this is dem mo Notifications","this is dem mo Notifications","this is dem mo Notifications"]
+            "Comment","Swap","Buy","Reject","Comment","Swap","Buy","Reject","Comment","Swap","Buy","Reject","Comment","Swap","Buy","Reject","Comment","Swap","Buy","Reject","Comment","Swap","Buy","Reject"]
         
         
-        arrDetail = ["buy navi team","buy navi team","buy navi team","buy navi team","buy navi team","buy navi team","buy navi team","buy navi team","buy navi team","buy navi team"]
+        arrDetail = ["Comment","Swap","Buy","Reject","Comment","Swap","Buy","Reject","Comment","Swap","Buy","Reject","Comment","Swap","Buy","Reject","Comment","Swap","Buy","Reject","Comment","Swap","Buy","Reject"]
         mytable.dataSource = self
         mytable.delegate = self
         tabNotifi.delegate = self
@@ -46,7 +46,33 @@ class NotificationsViewController: UIViewController,UITableViewDelegate,UITableV
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrDetail.count
+        return arrHead.count
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let indexpath = tableView.indexPathsForSelectedRows!
+        
+        let cellcurent = tableView.cellForRowAtIndexPath(indexPath) as! NotificationTableViewCell
+        
+                if cellcurent.lblHeader.text == "Comment" {
+            let stor = UIStoryboard(name: "Main", bundle: nil)
+            let alert = stor.instantiateViewControllerWithIdentifier("Screen49") as! InteractChatViewController
+            self.presentViewController(alert, animated: false,completion: nil)
+        }else if cellcurent.lblHeader.text == "Swap"{
+            let stor = UIStoryboard(name: "Main", bundle: nil)
+            let alert = stor.instantiateViewControllerWithIdentifier("Screen19") as! notificationInforViewController
+            self.presentViewController(alert, animated: false,completion: nil)
+        }else if cellcurent.lblHeader.text == "Buy"{
+            let stor = UIStoryboard(name: "Main", bundle: nil)
+            let alert = stor.instantiateViewControllerWithIdentifier("Screen27") as! Screen27ViewController
+            self.presentViewController(alert, animated: false,completion: nil)
+                }else{
+                    let stor = UIStoryboard(name: "Main", bundle: nil)
+                    let alert = stor.instantiateViewControllerWithIdentifier("Screen27") as! Screen27ViewController
+                    self.presentViewController(alert, animated: false,completion: nil)
+        }
+        
+        
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

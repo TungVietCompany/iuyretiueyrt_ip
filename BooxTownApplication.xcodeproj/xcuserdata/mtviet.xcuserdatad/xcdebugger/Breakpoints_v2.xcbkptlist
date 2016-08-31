@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BooxTownApplication/ExploreViewController.swift"
-            timestampString = "494246321.209154"
+            timestampString = "494303880.910272"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
             landmarkName = "btnHome(_:)"
             landmarkType = "5">
          </BreakpointContent>
